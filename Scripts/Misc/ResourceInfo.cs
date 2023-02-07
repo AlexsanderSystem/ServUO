@@ -170,119 +170,136 @@ namespace Server.Items
         {
             Blank = new CraftAttributeInfo();
 
-            CraftAttributeInfo dullCopper = DullCopper = new CraftAttributeInfo();
+            CraftAttributeInfo dullCopper = DullCopper = new CraftAttributeInfo(); //Cobre
 
-            dullCopper.ArmorPhysicalResist = 10;
-            dullCopper.ArmorDurability = 50;
-            dullCopper.ArmorLowerRequirements = 20;
-            dullCopper.WeaponDurability = 100;
-            dullCopper.WeaponLowerRequirements = 50;
-            dullCopper.RunicMinAttributes = 1;
-            dullCopper.RunicMaxAttributes = 2;
+            dullCopper.ArmorPhysicalResist = 8;
+            dullCopper.ArmorDurability = 35;
+            //dullCopper.ArmorLowerRequirements = 20;
+            dullCopper.WeaponDurability = 35;
+            dullCopper.WeaponLowerRequirements = 70;
+            //dullCopper.RunicMinAttributes = 1;
+            //dullCopper.RunicMaxAttributes = 2;
 
-            dullCopper.RunicMinIntensity = 40;
-            dullCopper.RunicMaxIntensity = 100;
+            //dullCopper.RunicMinIntensity = 40;
+            //dullCopper.RunicMaxIntensity = 100;
 
-            CraftAttributeInfo shadowIron = ShadowIron = new CraftAttributeInfo();
+            CraftAttributeInfo shadowIron = ShadowIron = new CraftAttributeInfo(); //bronze
 
-            shadowIron.ArmorPhysicalResist = 3;
-            shadowIron.ArmorFireResist = 2;
-            shadowIron.ArmorEnergyResist = 7;
+            shadowIron.ArmorPhysicalResist = 10;
+            shadowIron.ArmorFireResist = 7;
+            //shadowIron.ArmorEnergyResist = 7;
             shadowIron.ArmorDurability = 100;
 
-            shadowIron.WeaponColdDamage = 20;
-            shadowIron.WeaponDurability = 50;
+            shadowIron.WeaponFireDamage = 10;
+            shadowIron.WeaponDurability = 45;
 
-            shadowIron.RunicMinAttributes = 2;
-            shadowIron.RunicMaxAttributes = 2;
+            //shadowIron.RunicMinAttributes = 2;
+            //shadowIron.RunicMaxAttributes = 2;
 
-            shadowIron.RunicMinIntensity = 45;
-            shadowIron.RunicMaxIntensity = 100;
+            //shadowIron.RunicMinIntensity = 45;
+            //shadowIron.RunicMaxIntensity = 100;
 
-            CraftAttributeInfo copper = Copper = new CraftAttributeInfo();
+            CraftAttributeInfo copper = Copper = new CraftAttributeInfo(); //Prata
 
             copper.ArmorPhysicalResist = 2;
             copper.ArmorFireResist = 2;
-            copper.ArmorPoisonResist = 7;
+            copper.ArmorPoisonResist = 9;
             copper.ArmorEnergyResist = 2;
-            copper.WeaponPoisonDamage = 10;
-            copper.WeaponEnergyDamage = 20;
+
+            //copper.WeaponPoisonDamage = 10;
+
+			copper.WeaponDurability = 55;
+            copper.WeaponEnergyDamage = 12;
+
             copper.RunicMinAttributes = 2;
             copper.RunicMaxAttributes = 3;
 
             copper.RunicMinIntensity = 50;
             copper.RunicMaxIntensity = 100;
 
-            CraftAttributeInfo bronze = Bronze = new CraftAttributeInfo();
+            CraftAttributeInfo bronze = Bronze = new CraftAttributeInfo(); //Ouro
 
-            bronze.ArmorPhysicalResist = 3;
-            bronze.ArmorColdResist = 7;
+            bronze.ArmorPhysicalResist = 14;
+            bronze.ArmorColdResist = 2;
             bronze.ArmorPoisonResist = 2;
             bronze.ArmorEnergyResist = 2;
-            bronze.WeaponFireDamage = 40;
+
+            bronze.WeaponFireDamage = 20;
+
             bronze.RunicMinAttributes = 3;
             bronze.RunicMaxAttributes = 3;
 
             bronze.RunicMinIntensity = 55;
             bronze.RunicMaxIntensity = 100;
 
-            CraftAttributeInfo golden = Golden = new CraftAttributeInfo();
+            CraftAttributeInfo golden = Golden = new CraftAttributeInfo(); //Mithril
 
-            golden.ArmorPhysicalResist = 2;
+            golden.ArmorPhysicalResist = 10;
             golden.ArmorFireResist = 2;
             golden.ArmorColdResist = 2;
             golden.ArmorEnergyResist = 3;
-            golden.ArmorLuck = 40;
-            golden.ArmorLowerRequirements = 30;
-            golden.WeaponLuck = 40;
-            golden.WeaponLowerRequirements = 50;
+            //golden.ArmorLuck = 40;
+            //golden.ArmorLowerRequirements = 30;
+            //golden.WeaponLuck = 40;
+            //golden.WeaponLowerRequirements = 50;
+
+			golden.WeaponDurability = 78;
+			
+			golden.WeaponSwingSpeed = 50;
+
             golden.RunicMinAttributes = 3;
             golden.RunicMaxAttributes = 4;
 
             golden.RunicMinIntensity = 60;
             golden.RunicMaxIntensity = 100;
 
-            CraftAttributeInfo agapite = Agapite = new CraftAttributeInfo();
+            CraftAttributeInfo agapite = Agapite = new CraftAttributeInfo(); //Ébano
 
-            agapite.ArmorPhysicalResist = 2;
+            agapite.ArmorPhysicalResist = 13;
             agapite.ArmorFireResist = 7;
             agapite.ArmorColdResist = 2;
             agapite.ArmorPoisonResist = 2;
             agapite.ArmorEnergyResist = 2;
-            agapite.WeaponColdDamage = 30;
-            agapite.WeaponEnergyDamage = 20;
+
+            agapite.WeaponChaosDamage = 50;
+            //agapite.WeaponEnergyDamage = 20;
+
+			agapite.WeaponDurability = 78;
+
             agapite.RunicMinAttributes = 4;
             agapite.RunicMaxAttributes = 4;
 
             agapite.RunicMinIntensity = 65;
             agapite.RunicMaxIntensity = 100;
 
-            CraftAttributeInfo verite = Verite = new CraftAttributeInfo();
+            CraftAttributeInfo verite = Verite = new CraftAttributeInfo(); //Rubrídium
 
-            verite.ArmorPhysicalResist = 4;
+            verite.ArmorPhysicalResist = 16;
             verite.ArmorFireResist = 4;
             verite.ArmorColdResist = 3;
             verite.ArmorPoisonResist = 4;
-            verite.ArmorEnergyResist = 1;
-            verite.WeaponPoisonDamage = 40;
-            verite.WeaponEnergyDamage = 20;
+            verite.ArmorEnergyResist = 4;
+
+            //verite.WeaponPoisonDamage = 40;
+            verite.WeaponFireDamage = 75;
+			verite.WeaponFireDamage = 25;
             verite.RunicMinAttributes = 4;
             verite.RunicMaxAttributes = 5;
+
+			verite.WeaponDurability = 60;
 
             verite.RunicMinIntensity = 70;
             verite.RunicMaxIntensity = 100;
 
-            CraftAttributeInfo valorite = Valorite = new CraftAttributeInfo();
+            CraftAttributeInfo valorite = Valorite = new CraftAttributeInfo(); //Eldasthar
 
-            valorite.ArmorPhysicalResist = 5;
-            valorite.ArmorColdResist = 4;
-            valorite.ArmorPoisonResist = 4;
-            valorite.ArmorEnergyResist = 4;
-            valorite.ArmorDurability = 50;
-            valorite.WeaponFireDamage = 10;
-            valorite.WeaponColdDamage = 20;
-            valorite.WeaponPoisonDamage = 10;
-            valorite.WeaponEnergyDamage = 20;
+            valorite.ArmorPhysicalResist = 18;
+            valorite.ArmorColdResist = 7;
+            valorite.ArmorPoisonResist = 7;
+            valorite.ArmorEnergyResist = 7;
+            valorite.ArmorDurability = 100;
+            valorite.WeaponPoisonDamage = 70;
+            valorite.WeaponHitChance = 30;
             valorite.RunicMinAttributes = 5;
             valorite.RunicMaxAttributes = 5;
 
@@ -547,14 +564,14 @@ namespace Server.Items
         private static readonly CraftResourceInfo[] m_MetalInfo = new[]
         {
             new CraftResourceInfo(0x000, 1053109, "Iron", CraftAttributeInfo.Blank, CraftResource.Iron, typeof(IronIngot), typeof(IronOre), typeof(Granite)),
-            new CraftResourceInfo(0x973, 1053108, "Dull Copper",    CraftAttributeInfo.DullCopper,  CraftResource.DullCopper, typeof(DullCopperIngot),  typeof(DullCopperOre),  typeof(DullCopperGranite)),
-            new CraftResourceInfo(0x966, 1053107, "Shadow Iron",    CraftAttributeInfo.ShadowIron,  CraftResource.ShadowIron, typeof(ShadowIronIngot),  typeof(ShadowIronOre),  typeof(ShadowIronGranite)),
-            new CraftResourceInfo(0x96D, 1053106, "Copper", CraftAttributeInfo.Copper, CraftResource.Copper, typeof(CopperIngot), typeof(CopperOre), typeof(CopperGranite)),
-            new CraftResourceInfo(0x972, 1053105, "Bronze", CraftAttributeInfo.Bronze, CraftResource.Bronze, typeof(BronzeIngot), typeof(BronzeOre), typeof(BronzeGranite)),
-            new CraftResourceInfo(0x8A5, 1053104, "Gold", CraftAttributeInfo.Golden, CraftResource.Gold, typeof(GoldIngot), typeof(GoldOre), typeof(GoldGranite)),
-            new CraftResourceInfo(0x979, 1053103, "Agapite", CraftAttributeInfo.Agapite, CraftResource.Agapite, typeof(AgapiteIngot), typeof(AgapiteOre), typeof(AgapiteGranite)),
-            new CraftResourceInfo(0x89F, 1053102, "Verite", CraftAttributeInfo.Verite, CraftResource.Verite, typeof(VeriteIngot), typeof(VeriteOre), typeof(VeriteGranite)),
-            new CraftResourceInfo(0x8AB, 1053101, "Valorite", CraftAttributeInfo.Valorite,  CraftResource.Valorite, typeof(ValoriteIngot),  typeof(ValoriteOre), typeof(ValoriteGranite)),
+            new CraftResourceInfo(0x979, 1053108, "Dull Copper",    CraftAttributeInfo.DullCopper,  CraftResource.DullCopper, typeof(DullCopperIngot),  typeof(DullCopperOre),  typeof(DullCopperGranite)),
+            new CraftResourceInfo(0x972, 1053107, "Shadow Iron",    CraftAttributeInfo.ShadowIron,  CraftResource.ShadowIron, typeof(ShadowIronIngot),  typeof(ShadowIronOre),  typeof(ShadowIronGranite)),
+            new CraftResourceInfo(0x482, 1053106, "Copper", CraftAttributeInfo.Copper, CraftResource.Copper, typeof(CopperIngot), typeof(CopperOre), typeof(CopperGranite)),
+            new CraftResourceInfo(0x8A5, 1053105, "Bronze", CraftAttributeInfo.Bronze, CraftResource.Bronze, typeof(BronzeIngot), typeof(BronzeOre), typeof(BronzeGranite)),
+            new CraftResourceInfo(0xA91, 1053104, "Gold", CraftAttributeInfo.Golden, CraftResource.Gold, typeof(GoldIngot), typeof(GoldOre), typeof(GoldGranite)),
+            new CraftResourceInfo(0x455, 1053103, "Agapite", CraftAttributeInfo.Agapite, CraftResource.Agapite, typeof(AgapiteIngot), typeof(AgapiteOre), typeof(AgapiteGranite)),
+            new CraftResourceInfo(0x66b, 1053102, "Verite", CraftAttributeInfo.Verite, CraftResource.Verite, typeof(VeriteIngot), typeof(VeriteOre), typeof(VeriteGranite)),
+            new CraftResourceInfo(0x89F, 1053101, "Valorite", CraftAttributeInfo.Valorite,  CraftResource.Valorite, typeof(ValoriteIngot),  typeof(ValoriteOre), typeof(ValoriteGranite)),
         };
 
         private static readonly CraftResourceInfo[] m_ScaleInfo = new[]

@@ -13,7 +13,7 @@ namespace Server.Items
             : base(0x14F8)
         {
             Stackable = true;
-            Weight = 1.0;
+            Weight = 10.0;
             Amount = amount;
         }
 
@@ -53,7 +53,7 @@ namespace Server.Items
             : base(0x1876)
         {
             Stackable = true;
-            Weight = 5.0;
+            Weight = 0.5;
             Amount = amount;
         }
 
@@ -93,7 +93,7 @@ namespace Server.Items
             : base(0x1877)
         {
             Stackable = true;
-            Weight = 5.0;
+            Weight = 0.5;
             Amount = amount;
         }
 
@@ -133,7 +133,7 @@ namespace Server.Items
             : base(0x1878)
         {
             Stackable = true;
-            Weight = 5.0;
+            Weight = 0.5;
             Amount = amount;
         }
 
@@ -173,7 +173,7 @@ namespace Server.Items
             : base(0x1879)
         {
             Stackable = true;
-            Weight = 5.0;
+            Weight = 0.5;
             Amount = amount;
         }
 

@@ -1787,15 +1787,15 @@
 				<object type="Server.Items.VeriteIngot" gfx="7154" hue="2207" />
 			</category>
 			<category title="Ore">
-				<object type="Server.Items.AgapiteOre" gfx="6585" hue="2425" />
-				<object type="Server.Items.BronzeOre" gfx="6585" hue="2418" />
-				<object type="Server.Items.CopperOre" gfx="6585" hue="2413" />
-				<object type="Server.Items.DullCopperOre" gfx="6583" hue="2419" />
+				<object type="Server.Items.IronOre" gfx="6584" /> 
+				<object type="Server.Items.DullCopperOre" gfx="6583" hue="0641" /> 
+				<object type="Server.Items.ShadowIronOre" gfx="6583" hue="2418" />
+				<object type="Server.Items.CopperOre" gfx="6585" hue="1154" /> 
+				<object type="Server.Items.BronzeOre" gfx="6585" hue="2213" /> 
 				<object type="Server.Items.GoldOre" gfx="6585" hue="2213" />
-				<object type="Server.Items.IronOre" gfx="6584" />
-				<object type="Server.Items.ShadowIronOre" gfx="6583" hue="2406" />
-				<object type="Server.Items.ValoriteOre" gfx="6583" hue="2219" />
-				<object type="Server.Items.VeriteOre" gfx="6585" hue="2207" />
+				<object type="Server.Items.AgapiteOre" gfx="6585" hue="1109" /> 
+				<object type="Server.Items.VeriteOre" gfx="6585" hue="1643" /> 
+				<object type="Server.Items.ValoriteOre" gfx="6583" hue="2207" /> 
 			</category>
 			<category title="Reagents">
 				<category title="Necromancy">

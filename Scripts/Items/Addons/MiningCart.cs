@@ -13,7 +13,7 @@ namespace Server.Items
         GemSouth = 102,
         GemEast = 103
     }
-
+//Bonus
     public class MiningCart : BaseAddon, IRewardItem
     {
         public override bool ForceShowProperties => true;
@@ -186,21 +186,21 @@ namespace Server.Items
             BaseHouse house = BaseHouse.FindHouseAt(this);
 
             /*
-            * Unique problems have unique solutions.  OSI does not have a problem with 1000s of mining carts
-            * due to the fact that they have only a miniscule fraction of the number of 10 year vets that a
-            * typical RunUO shard will have (RunUO's scaled down account aging system makes this a unique problem),
-            * and the "freeness" of free accounts. We also dont have mitigating factors like inactive (unpaid)
-            * accounts not gaining veteran time.
+            * Problemas únicos têm soluções únicas. A OSI não tem problemas com milhares de carrinhos de mineração
+            * devido ao fato de terem apenas uma fração minúscula do número de veterinários de 10 anos que um
+            * o fragmento RunUO típico terá (o sistema de envelhecimento de conta reduzido do RunUO torna isso um problema único),
+            * e a "gratuidade" das contas gratuitas.
+            * contas que não ganham tempo de veterano.
             *
-            * The lack of high end vets and vet rewards on OSI has made testing the *exact* ranging/stacking
-            * behavior of these things all but impossible, so either way its just an estimation.
+            * A falta de veterinários de ponta e recompensas veterinárias no OSI tornou o teste o *exato* alcance/empilhamento
+            * o comportamento dessas coisas é quase impossível, então, de qualquer forma, é apenas uma estimativa.
             *
-            * If youd like your shard's carts/stumps to work the way they did before, simply replace the check
-            * below with this line of code:
+            * Se você quiser que os carrinhos/tocos do seu fragmento funcionem como antes, basta substituir o cheque
+            * abaixo com esta linha de código:
             *
             * if (!from.InRange(GetWorldLocation(), 2)
             *
-            * However, I am sure these checks are more accurate to OSI than the former version was.
+            * No entanto, tenho certeza de que essas verificações são mais precisas para OSI do que a versão anterior.
             *
             */
 

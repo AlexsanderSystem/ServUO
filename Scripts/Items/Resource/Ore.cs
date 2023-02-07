@@ -356,7 +356,7 @@ namespace Server.Items
 
                     if (difficulty > 50.0 && difficulty > from.Skills[SkillName.Mining].Value && !talisman)
                     {
-                        from.SendLocalizedMessage(501986); // You have no idea how to smelt this strange ore!
+                        from.SendLocalizedMessage(501986); // Você não tem ideia de como fundir este estranho minério!
                         return;
                     }
 
@@ -407,7 +407,7 @@ namespace Server.Items
 
                             m_Ore.Consume(toConsume);
                             from.AddToBackpack(ingot);
-                            //from.PlaySound( 0x57 );
+                            from.PlaySound( 0x57 );
 
                             if (talisman && t != null)
                             {
