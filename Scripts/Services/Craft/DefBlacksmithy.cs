@@ -770,6 +770,15 @@ namespace Server.Engines.Craft
 
             #region Miscellaneous
 
+			index = AddCraft (typeof(Placa),1011173, 3010013, 52.5, 110.9,typeof(IronIngot), 1044036, 8, 1044037);
+
+			index = AddCraft (typeof(PontaFerro),1011173, 3010014, 32.5, 90.9,typeof(IronIngot), 1044036, 1, 1044037);
+
+			index = AddCraft (typeof(PontaPrata),1011173, 3010015, 42.5, 100.9,typeof(CopperIngot), 1044036, 1, 1044037);
+
+
+
+
             index = AddCraft(typeof(DragonGloves), 1011173, 1029795, 68.9, 118.9, typeof(RedScales), 1060883, 16, 1060884);
             SetUseSubRes2(index, true);
 

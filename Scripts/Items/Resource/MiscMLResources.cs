@@ -407,6 +407,7 @@ namespace Server.Items
         {
             Stackable = true;
             Amount = amount;
+			Name = "Fibra vegetal";
         }
 
         public BarkFragment(Serial serial)
