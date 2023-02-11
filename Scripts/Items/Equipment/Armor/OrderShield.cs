@@ -9,7 +9,7 @@ namespace Server.Items
         public OrderShield()
             : base(0x1BC4)
         {
-            Weight = 7.0;
+            Weight = 30.0;
         }
 
         public OrderShield(Serial serial)

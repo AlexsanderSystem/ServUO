@@ -10,7 +10,7 @@ namespace Server.Items
         public FemalePlateChest()
             : base(0x1C04)
         {
-            Weight = 4.0;
+            Weight = 18.0;
         }
 
         public FemalePlateChest(Serial serial)
@@ -18,10 +18,10 @@ namespace Server.Items
         {
         }
 
-        public override int BasePhysicalResistance => 5;
-        public override int BaseFireResistance => 3;
+        public override int BasePhysicalResistance => 12;
+        public override int BaseFireResistance => 2;
         public override int BaseColdResistance => 2;
-        public override int BasePoisonResistance => 3;
+        public override int BasePoisonResistance => 2;
         public override int BaseEnergyResistance => 2;
         public override int InitMinHits => 50;
         public override int InitMaxHits => 65;

@@ -9,7 +9,7 @@ namespace Server.Items
         public MetalShield()
             : base(0x1B7B)
         {
-            Weight = 6.0;
+            Weight = 17.0;
         }
 
         public MetalShield(Serial serial)
@@ -24,7 +24,7 @@ namespace Server.Items
         public override int BaseEnergyResistance => 0;
         public override int InitMinHits => 50;
         public override int InitMaxHits => 65;
-        public override int StrReq => 45;
+        public override int StrReq => 60;
         public override void Deserialize(GenericReader reader)
         {
             base.Deserialize(reader);

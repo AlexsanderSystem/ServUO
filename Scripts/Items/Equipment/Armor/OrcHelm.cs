@@ -24,7 +24,7 @@ namespace Server.Items
         public override int BaseEnergyResistance => 5;
         public override int InitMinHits => 30;
         public override int InitMaxHits => 50;
-        public override int StrReq => 30;
+        public override int StrReq => 50;
         public override double DefaultWeight => 5;
         public override ArmorMaterialType MaterialType => ArmorMaterialType.Bone;
         public override CraftResource DefaultResource => CraftResource.RegularLeather;

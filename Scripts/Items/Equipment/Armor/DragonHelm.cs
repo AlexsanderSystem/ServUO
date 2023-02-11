@@ -7,7 +7,7 @@ namespace Server.Items
         public DragonHelm()
             : base(0x2645)
         {
-            Weight = 5.0;
+            Weight = 15.0;
         }
 
         public DragonHelm(Serial serial)
@@ -15,7 +15,7 @@ namespace Server.Items
         {
         }
 
-        public override int BasePhysicalResistance => 3;
+        public override int BasePhysicalResistance => 13;
         public override int BaseFireResistance => 3;
         public override int BaseColdResistance => 3;
         public override int BasePoisonResistance => 3;

@@ -9,7 +9,7 @@ namespace Server.Items
         public ChaosShield()
             : base(0x1BC3)
         {
-            Weight = 5.0;
+            Weight = 15.0;
         }
 
         public ChaosShield(Serial serial)
@@ -17,14 +17,14 @@ namespace Server.Items
         {
         }
 
-        public override int BasePhysicalResistance => 1;
+        public override int BasePhysicalResistance => 9;
         public override int BaseFireResistance => 0;
         public override int BaseColdResistance => 0;
         public override int BasePoisonResistance => 0;
         public override int BaseEnergyResistance => 0;
         public override int InitMinHits => 100;
         public override int InitMaxHits => 125;
-        public override int StrReq => 95;
+        public override int StrReq => 70;
 
         public override void Deserialize(GenericReader reader)
         {

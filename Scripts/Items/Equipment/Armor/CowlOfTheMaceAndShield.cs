@@ -5,7 +5,7 @@ namespace Server.Items
 {
     public class CowlOfTheMaceAndShield : AssassinsCowl
     {
-        public override int LabelNumber => 1159228;  // cowl of the mace & shield
+        public override int LabelNumber => 1159228;  // cowl of the mace & shield //Verificar Cliloc
         public override bool IsArtifact => true;
 
         public override int BasePhysicalResistance => 10;

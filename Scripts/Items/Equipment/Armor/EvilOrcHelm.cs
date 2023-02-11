@@ -9,7 +9,7 @@ namespace Server.Items
             : base()
         {
             Hue = 0x96E;
-            Attributes.BonusStr = 10;
+            Attributes.BonusStr = 3;
             Attributes.BonusInt = IntOrDexPropertyValue;
             Attributes.BonusDex = IntOrDexPropertyValue;
         }

@@ -7,7 +7,7 @@ namespace Server.Items
         public Circlet()
             : base(0x2B6E)
         {
-            Weight = 2.0;
+            Weight = 10.0;
         }
 
         public Circlet(Serial serial)
@@ -15,7 +15,7 @@ namespace Server.Items
         {
         }
 
-        public override int BasePhysicalResistance => 1;
+        public override int BasePhysicalResistance => 0;
         public override int BaseFireResistance => 5;
         public override int BaseColdResistance => 2;
         public override int BasePoisonResistance => 2;

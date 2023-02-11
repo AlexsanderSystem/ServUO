@@ -7,7 +7,7 @@ namespace Server.Items
         public DragonGloves()
             : base(0x2643)
         {
-            Weight = 2.0;
+            Weight = 10.0;
         }
 
         public DragonGloves(Serial serial)
@@ -15,7 +15,7 @@ namespace Server.Items
         {
         }
 
-        public override int BasePhysicalResistance => 3;
+        public override int BasePhysicalResistance => 13;
         public override int BaseFireResistance => 3;
         public override int BaseColdResistance => 3;
         public override int BasePoisonResistance => 3;

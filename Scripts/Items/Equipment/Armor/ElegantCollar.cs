@@ -24,7 +24,7 @@ namespace Server.Items
             : base(0xA40F)
         {
             Layer = Layer.Neck;
-            Weight = 3.0;
+            Weight = 6.0;
         }
 
         public ElegantCollar(Serial serial)

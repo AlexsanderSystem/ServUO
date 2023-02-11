@@ -7,7 +7,7 @@ namespace Server.Items
         public FemaleElvenPlateChest()
             : base(0x2B6D)
         {
-            Weight = 8.0;
+            Weight = 18.0;
         }
 
         public FemaleElvenPlateChest(Serial serial)
@@ -15,11 +15,11 @@ namespace Server.Items
         {
         }
 
-        public override int BasePhysicalResistance => 5;
-        public override int BaseFireResistance => 3;
-        public override int BaseColdResistance => 2;
-        public override int BasePoisonResistance => 3;
-        public override int BaseEnergyResistance => 2;
+        public override int BasePhysicalResistance => 2;
+        public override int BaseFireResistance => 2;
+        public override int BaseColdResistance => 6;
+        public override int BasePoisonResistance => 6;
+        public override int BaseEnergyResistance => 5;
         public override int InitMinHits => 50;
         public override int InitMaxHits => 65;
         public override int StrReq => 95;

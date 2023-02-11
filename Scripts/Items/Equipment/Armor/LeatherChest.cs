@@ -10,7 +10,7 @@ namespace Server.Items
         public LeatherChest()
             : base(0x13CC)
         {
-            Weight = 6.0;
+            Weight = 16.0;
         }
 
         public LeatherChest(Serial serial)
@@ -25,7 +25,7 @@ namespace Server.Items
         public override int BaseEnergyResistance => 3;
         public override int InitMinHits => 30;
         public override int InitMaxHits => 40;
-        public override int StrReq => 25;
+        public override int StrReq => 50;
         public override ArmorMaterialType MaterialType => ArmorMaterialType.Leather;
         public override CraftResource DefaultResource => CraftResource.RegularLeather;
         public override ArmorMeditationAllowance DefMedAllowance => ArmorMeditationAllowance.All;

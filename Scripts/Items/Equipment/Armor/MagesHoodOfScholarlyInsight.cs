@@ -27,11 +27,8 @@ namespace Server.Items
         public MagesHoodOfScholarlyInsight(int hue)
             : base(hue)
         {
-            Attributes.BonusMana = 15;
-            Attributes.RegenMana = 2;
-            Attributes.SpellDamage = 15;
+            Attributes.SpellDamage = 7;
             Attributes.CastSpeed = 1;
-            Attributes.LowerManaCost = 10;
         }
 
         public MagesHoodOfScholarlyInsight(Serial serial)

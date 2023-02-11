@@ -6,7 +6,7 @@ namespace Server.Items
         public LeafGorget()
             : base(0x2FC7)
         {
-            Weight = 2.0;
+            Weight = 12.0;
         }
 
         public LeafGorget(Serial serial)
@@ -14,14 +14,14 @@ namespace Server.Items
         {
         }
 
-        public override int BasePhysicalResistance => 2;
-        public override int BaseFireResistance => 3;
-        public override int BaseColdResistance => 2;
-        public override int BasePoisonResistance => 4;
-        public override int BaseEnergyResistance => 4;
+        public override int BasePhysicalResistance => 1;
+        public override int BaseFireResistance => 5;
+        public override int BaseColdResistance => 5;
+        public override int BasePoisonResistance => 5;
+        public override int BaseEnergyResistance => 5;
         public override int InitMinHits => 30;
         public override int InitMaxHits => 40;
-        public override int StrReq => 10;
+        public override int StrReq => 42;
         public override ArmorMaterialType MaterialType => ArmorMaterialType.Leather;
         public override CraftResource DefaultResource => CraftResource.RegularLeather;
         public override ArmorMeditationAllowance DefMedAllowance => ArmorMeditationAllowance.All;

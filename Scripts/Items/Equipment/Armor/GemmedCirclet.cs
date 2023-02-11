@@ -7,7 +7,7 @@ namespace Server.Items
         public GemmedCirclet()
             : base(0x2B70)
         {
-            Weight = 2.0;
+            Weight = 8.0;
         }
 
         public GemmedCirclet(Serial serial)
@@ -22,7 +22,7 @@ namespace Server.Items
         public override int BaseEnergyResistance => 5;
         public override int InitMinHits => 20;
         public override int InitMaxHits => 35;
-        public override int StrReq => 10;
+        public override int StrReq => 30;
         public override ArmorMaterialType MaterialType => ArmorMaterialType.Plate;
         public override ArmorMeditationAllowance DefMedAllowance => ArmorMeditationAllowance.All;
         public override void Serialize(GenericWriter writer)

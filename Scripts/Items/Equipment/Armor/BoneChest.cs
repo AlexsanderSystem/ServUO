@@ -3,14 +3,14 @@ namespace Server.Items
     [Flipable(0x144f, 0x1454)]
     public class BoneChest : BaseArmor
     {
-        public override int BasePhysicalResistance => 3;
+        public override int BasePhysicalResistance => 6;
         public override int BaseFireResistance => 3;
         public override int BaseColdResistance => 4;
         public override int BasePoisonResistance => 2;
         public override int BaseEnergyResistance => 4;
         public override int InitMinHits => 25;
         public override int InitMaxHits => 30;
-        public override int StrReq => 60;
+        public override int StrReq => 50;
         public override ArmorMaterialType MaterialType => ArmorMaterialType.Bone;
         public override CraftResource DefaultResource => CraftResource.RegularLeather;
 
@@ -18,7 +18,7 @@ namespace Server.Items
         public BoneChest()
             : base(0x144F)
         {
-            Weight = 6.0;
+            Weight = 25.0;
         }
 
         public BoneChest(Serial serial)

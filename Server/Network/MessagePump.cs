@@ -192,7 +192,7 @@ namespace Server.Network
 				packetID != 0x91 && packetID != 0xA4 && packetID != 0xEF && packetID != 0xE4 && packetID != 0xFF)
 			{
 				Utility.PushColor(ConsoleColor.Red);
-				Console.WriteLine("Client: {0}: Encrypted Client Unsupported", ns);
+				Console.WriteLine("Cliente: {0}: Encrypted Client Unsupported", ns);
 				Utility.PopColor();
 
 				ns.Dispose();

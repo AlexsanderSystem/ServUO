@@ -2,7 +2,7 @@ namespace Server.Items
 {
     public class DragonTurtleHideHelm : BaseArmor
     {
-        public override int BasePhysicalResistance => 1;
+        public override int BasePhysicalResistance => 11;
         public override int BaseFireResistance => 5;
         public override int BaseColdResistance => 2;
         public override int BasePoisonResistance => 2;
@@ -11,7 +11,7 @@ namespace Server.Items
         public override int InitMinHits => 20;
         public override int InitMaxHits => 35;
 
-        public override int StrReq => 30;
+        public override int StrReq => 70;
 
         public override ArmorMaterialType MaterialType => ArmorMaterialType.Leather;
         public override CraftResource DefaultResource => CraftResource.RegularLeather;

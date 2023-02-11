@@ -2,7 +2,7 @@ namespace Server.Items
 {
     public class CrimsonSwordBelt : SwordBelt
     {
-        public override int LabelNumber => 1159212;  // crimson sword belt
+        public override int LabelNumber => 1159212;  // crimson sword belt //Cliloc
 
         [Constructable]
         public CrimsonSwordBelt()

@@ -14,14 +14,14 @@ namespace Server.Items
         {
         }
 
-        public override int BasePhysicalResistance => 2;
+        public override int BasePhysicalResistance => 8;
         public override int BaseFireResistance => 4;
         public override int BaseColdResistance => 4;
         public override int BasePoisonResistance => 3;
         public override int BaseEnergyResistance => 2;
         public override int InitMinHits => 45;
         public override int InitMaxHits => 60;
-        public override int StrReq => 45;
+        public override int StrReq => 70;
         public override ArmorMaterialType MaterialType => ArmorMaterialType.Plate;
         public override void Serialize(GenericWriter writer)
         {

@@ -7,7 +7,7 @@ namespace Server.Items
         public ChainCoif()
             : base(0x13BB)
         {
-            Weight = 1.0;
+            Weight = 8.0;
         }
 
         public ChainCoif(Serial serial)
@@ -15,14 +15,14 @@ namespace Server.Items
         {
         }
 
-        public override int BasePhysicalResistance => 4;
-        public override int BaseFireResistance => 4;
-        public override int BaseColdResistance => 4;
+        public override int BasePhysicalResistance => 9;
+        public override int BaseFireResistance => 1;
+        public override int BaseColdResistance => 1;
         public override int BasePoisonResistance => 1;
-        public override int BaseEnergyResistance => 2;
+        public override int BaseEnergyResistance => 1;
         public override int InitMinHits => 35;
         public override int InitMaxHits => 60;
-        public override int StrReq => 60;
+        public override int StrReq => 50;
         public override ArmorMaterialType MaterialType => ArmorMaterialType.Chainmail;
         public override void Serialize(GenericWriter writer)
         {

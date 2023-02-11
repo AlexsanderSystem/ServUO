@@ -9,7 +9,7 @@ namespace Server.Items
         public HeaterShield()
             : base(0x1B76)
         {
-            Weight = 8.0;
+            Weight = 25.0;
         }
 
         public HeaterShield(Serial serial)
@@ -17,7 +17,7 @@ namespace Server.Items
         {
         }
 
-        public override int BasePhysicalResistance => 0;
+        public override int BasePhysicalResistance => 7;
         public override int BaseFireResistance => 1;
         public override int BaseColdResistance => 0;
         public override int BasePoisonResistance => 0;

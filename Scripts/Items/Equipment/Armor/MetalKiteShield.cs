@@ -9,7 +9,7 @@ namespace Server.Items
         public MetalKiteShield()
             : base(0x1B74)
         {
-            Weight = 7.0;
+            Weight = 23.0;
         }
 
         public MetalKiteShield(Serial serial)
@@ -24,7 +24,7 @@ namespace Server.Items
         public override int BaseEnergyResistance => 1;
         public override int InitMinHits => 45;
         public override int InitMaxHits => 60;
-        public override int StrReq => 45;
+        public override int StrReq => 75;
         public bool Dye(Mobile from, DyeTub sender)
         {
             if (Deleted)

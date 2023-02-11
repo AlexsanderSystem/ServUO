@@ -7,7 +7,7 @@ namespace Server.Items
         public FemaleStuddedChest()
             : base(0x1C02)
         {
-            Weight = 6.0;
+            Weight = 16.0;
         }
 
         public FemaleStuddedChest(Serial serial)
@@ -16,13 +16,13 @@ namespace Server.Items
         }
 
         public override int BasePhysicalResistance => 2;
-        public override int BaseFireResistance => 4;
-        public override int BaseColdResistance => 3;
-        public override int BasePoisonResistance => 3;
-        public override int BaseEnergyResistance => 4;
+        public override int BaseFireResistance => 5;
+        public override int BaseColdResistance => 2;
+        public override int BasePoisonResistance => 5;
+        public override int BaseEnergyResistance => 5;
         public override int InitMinHits => 35;
         public override int InitMaxHits => 45;
-        public override int StrReq => 35;
+        public override int StrReq => 50;
         public override ArmorMaterialType MaterialType => ArmorMaterialType.Studded;
         public override CraftResource DefaultResource => CraftResource.RegularLeather;
         public override ArmorMeditationAllowance DefMedAllowance => ArmorMeditationAllowance.Half;
