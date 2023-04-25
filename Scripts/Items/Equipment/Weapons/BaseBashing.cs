@@ -38,7 +38,7 @@ namespace Server.Items
             base.OnHit(attacker, defender, damageBonus);
 
             if (defender is Mobile)
-                ((Mobile)defender).Stam -= Utility.Random(3, 5); // 3-5 points of stamina loss
+                ((Mobile)defender).Stam -= Utility.Random(5, 20); // 3-5 points of stamina loss
         }
     }
 }

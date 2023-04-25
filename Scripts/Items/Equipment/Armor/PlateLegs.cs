@@ -10,7 +10,7 @@ namespace Server.Items
         public PlateLegs()
             : base(0x1411)
         {
-            Weight = 7.0;
+            Weight = 30.0;
         }
 
         public PlateLegs(Serial serial)
@@ -18,10 +18,10 @@ namespace Server.Items
         {
         }
 
-        public override int BasePhysicalResistance => 5;
-        public override int BaseFireResistance => 3;
+        public override int BasePhysicalResistance => 14;
+        public override int BaseFireResistance => 2;
         public override int BaseColdResistance => 2;
-        public override int BasePoisonResistance => 3;
+        public override int BasePoisonResistance => 2;
         public override int BaseEnergyResistance => 2;
         public override int InitMinHits => 50;
         public override int InitMaxHits => 65;

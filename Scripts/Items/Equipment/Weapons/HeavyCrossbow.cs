@@ -9,7 +9,7 @@ namespace Server.Items
         public HeavyCrossbow()
             : base(0x13FD)
         {
-            Weight = 9.0;
+            Weight = 12.0;
             Layer = Layer.TwoHanded;
         }
 
@@ -23,12 +23,12 @@ namespace Server.Items
         public override Item Ammo => new Bolt();
         public override WeaponAbility PrimaryAbility => WeaponAbility.MovingShot;
         public override WeaponAbility SecondaryAbility => WeaponAbility.Dismount;
-        public override int StrengthReq => 80;
-        public override int MinDamage => 20;
-        public override int MaxDamage => 24;
-        public override float Speed => 5.00f;
+        public override int StrengthReq => 60;
+        public override int MinDamage => 22;
+        public override int MaxDamage => 31;
+        public override float Speed => 2.70f;
 
-        public override int DefMaxRange => 8;
+        public override int DefMaxRange => 13;
         public override int InitMinHits => 31;
         public override int InitMaxHits => 100;
         public override void Serialize(GenericWriter writer)

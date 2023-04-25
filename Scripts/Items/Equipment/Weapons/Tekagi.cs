@@ -21,10 +21,10 @@ namespace Server.Items
 
         public override WeaponAbility PrimaryAbility => WeaponAbility.DualWield;
         public override WeaponAbility SecondaryAbility => WeaponAbility.TalonStrike;
-        public override int StrengthReq => 10;
+        public override int StrengthReq => 40;
         public override int MinDamage => 10;
         public override int MaxDamage => 13;
-        public override float Speed => 2.00f;
+        public override float Speed => 1.20f;
 
         public override int DefHitSound => 0x238;
         public override int DefMissSound => 0x232;

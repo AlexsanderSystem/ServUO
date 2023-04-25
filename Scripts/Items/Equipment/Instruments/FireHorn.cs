@@ -13,7 +13,7 @@ namespace Server.Items
             : base(0xFC7)
         {
             Hue = 0x466;
-            Weight = 1.0;
+            Weight = 4.0;
         }
 
         public FireHorn(Serial serial)

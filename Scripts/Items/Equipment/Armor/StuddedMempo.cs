@@ -6,7 +6,7 @@ namespace Server.Items
         public StuddedMempo()
             : base(0x279D)
         {
-            Weight = 2.0;
+            Weight = 12.0;
         }
 
         public StuddedMempo(Serial serial)
@@ -14,14 +14,14 @@ namespace Server.Items
         {
         }
 
-        public override int BasePhysicalResistance => 2;
-        public override int BaseFireResistance => 4;
-        public override int BaseColdResistance => 3;
-        public override int BasePoisonResistance => 3;
+        public override int BasePhysicalResistance => 7;
+        public override int BaseFireResistance => 2;
+        public override int BaseColdResistance => 2;
+        public override int BasePoisonResistance => 2;
         public override int BaseEnergyResistance => 3;
         public override int InitMinHits => 30;
         public override int InitMaxHits => 40;
-        public override int StrReq => 30;
+        public override int StrReq => 60;
         public override ArmorMaterialType MaterialType => ArmorMaterialType.Studded;
         public override CraftResource DefaultResource => CraftResource.RegularLeather;
         public override void Serialize(GenericWriter writer)

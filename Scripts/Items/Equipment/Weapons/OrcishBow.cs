@@ -9,7 +9,7 @@ namespace Server.Items
         {
             Hue = 1107;
             Attributes.WeaponDamage = 25;
-            WeaponAttributes.DurabilityBonus = 70;
+            WeaponAttributes.DurabilityBonus = 10;
         }
 
         public OrcishBow(Serial serial)

@@ -9,7 +9,7 @@ namespace Server.Items
         public Crossbow()
             : base(0xF50)
         {
-            Weight = 7.0;
+            Weight = 12.0;
             Layer = Layer.TwoHanded;
         }
 
@@ -23,12 +23,12 @@ namespace Server.Items
         public override Item Ammo => new Bolt();
         public override WeaponAbility PrimaryAbility => WeaponAbility.ConcussionBlow;
         public override WeaponAbility SecondaryAbility => WeaponAbility.MortalStrike;
-        public override int StrengthReq => 35;
-        public override int MinDamage => 18;
-        public override int MaxDamage => 22;
-        public override float Speed => 4.50f;
+        public override int StrengthReq => 50;
+        public override int MinDamage => 19;
+        public override int MaxDamage => 27;
+        public override float Speed => 2.50f;
 
-        public override int DefMaxRange => 8;
+        public override int DefMaxRange => 11;
         public override int InitMinHits => 31;
         public override int InitMaxHits => 80;
         public override void Serialize(GenericWriter writer)

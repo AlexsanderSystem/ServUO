@@ -10,7 +10,7 @@ namespace Server.Items
         public Bardiche()
             : base(0xF4D)
         {
-            Weight = 7.0;
+            Weight = 10.0;
         }
 
         public Bardiche(Serial serial)
@@ -21,15 +21,15 @@ namespace Server.Items
         public override WeaponAbility PrimaryAbility => WeaponAbility.ParalyzingBlow;
         public override WeaponAbility SecondaryAbility => WeaponAbility.Dismount;
 
-        public override int StrengthReq => 45;
+        public override int StrengthReq => 80;
 
-        public override int MinDamage => 17;
-        public override int MaxDamage => 20;
+        public override int MinDamage => 35;
+        public override int MaxDamage => 37;
 
-        public override float Speed => 3.75f;
+        public override float Speed => 3.00f;
 
         public override int InitMinHits => 31;
-        public override int InitMaxHits => 100;
+        public override int InitMaxHits => 70;
 
         public override void Serialize(GenericWriter writer)
         {

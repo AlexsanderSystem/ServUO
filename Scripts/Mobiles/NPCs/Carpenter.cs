@@ -40,6 +40,19 @@ namespace Server.Mobiles
             SetWearable(new HalfApron(), dropChance: 1);
         }
 
+                                public override bool HandlesOnSpeech(Mobile from)
+{
+    return true;
+}
+
+public override void OnSpeech(SpeechEventArgs e)
+{
+    if (e.Speech.ToLower() == "oi")
+    {
+        Say("Olá! Estou trabalhando agora. Se precisa vender algo avise.", e.Mobile);
+    }
+}
+
         #region Bulk Orders
         public override BODType BODType => BODType.Carpentry;
 

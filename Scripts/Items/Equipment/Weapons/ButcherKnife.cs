@@ -10,7 +10,7 @@ namespace Server.Items
         public ButcherKnife()
             : base(0x13F6)
         {
-            Weight = 1.0;
+            Weight = 2.0;
         }
 
         public ButcherKnife(Serial serial)
@@ -21,8 +21,8 @@ namespace Server.Items
         public override WeaponAbility PrimaryAbility => WeaponAbility.InfectiousStrike;
         public override WeaponAbility SecondaryAbility => WeaponAbility.Disarm;
         public override int StrengthReq => 10;
-        public override int MinDamage => 10;
-        public override int MaxDamage => 13;
+        public override int MinDamage => 2;
+        public override int MaxDamage => 8;
         public override float Speed => 2.25f;
 
         public override int InitMinHits => 31;

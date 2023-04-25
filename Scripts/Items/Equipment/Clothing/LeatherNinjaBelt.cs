@@ -16,7 +16,7 @@ namespace Server.Items
             : base(0x2790)
 
         {
-            Weight = 1.0;
+            Weight = 11.0;
             Layer = Layer.Waist;
         }
 

@@ -8,7 +8,7 @@ namespace Server.Items
         public SwordBelt()
             : base(0xA40D)
         {
-            Weight = 3.0;
+            Weight = 13.0;
             Layer = Layer.Waist;
         }
 

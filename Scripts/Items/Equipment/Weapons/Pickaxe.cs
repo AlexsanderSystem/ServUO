@@ -10,7 +10,7 @@ namespace Server.Items
             : base(0xE86)
         {
             Weight = 11.0;
-            UsesRemaining = 50;
+            UsesRemaining = 35;
             ShowUsesRemaining = true;
         }
 
@@ -22,9 +22,9 @@ namespace Server.Items
         public override HarvestSystem HarvestSystem => Mining.System;
         public override WeaponAbility PrimaryAbility => WeaponAbility.DoubleStrike;
         public override WeaponAbility SecondaryAbility => WeaponAbility.Disarm;
-        public override int StrengthReq => 50;
-        public override int MinDamage => 12;
-        public override int MaxDamage => 16;
+        public override int StrengthReq => 55;
+        public override int MinDamage => 1;
+        public override int MaxDamage => 10;
         public override float Speed => 3.00f;
         public override int InitMinHits => 31;
         public override int InitMaxHits => 60;

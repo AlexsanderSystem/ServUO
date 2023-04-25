@@ -7,7 +7,7 @@ namespace Server.Items
         public QuarterStaff()
             : base(0xE89)
         {
-            Weight = 4.0;
+            Weight = 6.0;
         }
 
         public QuarterStaff(Serial serial)
@@ -18,8 +18,8 @@ namespace Server.Items
         public override WeaponAbility PrimaryAbility => WeaponAbility.DoubleStrike;
         public override WeaponAbility SecondaryAbility => WeaponAbility.ConcussionBlow;
         public override int StrengthReq => 30;
-        public override int MinDamage => 11;
-        public override int MaxDamage => 14;
+        public override int MinDamage => 15;
+        public override int MaxDamage => 20;
         public override float Speed => 2.25f;
 
         public override int InitMinHits => 31;

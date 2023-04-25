@@ -10,7 +10,7 @@ namespace Server.Items
         public Cleaver()
             : base(0xEC3)
         {
-            Weight = 2.0;
+            Weight = 3.0;
         }
 
         public Cleaver(Serial serial)

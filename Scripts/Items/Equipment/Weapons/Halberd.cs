@@ -20,9 +20,9 @@ namespace Server.Items
 
         public override WeaponAbility PrimaryAbility => WeaponAbility.WhirlwindAttack;
         public override WeaponAbility SecondaryAbility => WeaponAbility.ConcussionBlow;
-        public override int StrengthReq => 95;
-        public override int MinDamage => 18;
-        public override int MaxDamage => 21;
+        public override int StrengthReq => 80;
+        public override int MinDamage => 25;
+        public override int MaxDamage => 37;
         public override float Speed => 4.00f;
 
         public override int InitMinHits => 31;

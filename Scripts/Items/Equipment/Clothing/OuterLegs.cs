@@ -32,7 +32,7 @@ namespace Server.Items
         }
     }
 
-    [Flipable(0x230C, 0x230B)]
+    [Flipable(0x230C, 0x230B)] //REVISAR
     public class FurSarong : BaseOuterLegs
     {
         [Constructable]
@@ -71,6 +71,11 @@ namespace Server.Items
     [Flipable(0x1516, 0x1531)]
     public class Skirt : BaseOuterLegs
     {
+        public override int BasePhysicalResistance => 0;
+        public override int BaseFireResistance => 1;
+        public override int BaseColdResistance => 1;
+        public override int BasePoisonResistance => 1;
+        public override int BaseEnergyResistance => 1;
         [Constructable]
         public Skirt()
             : this(0)
@@ -81,7 +86,7 @@ namespace Server.Items
         public Skirt(int hue)
             : base(0x1516, hue)
         {
-            Weight = 4.0;
+            Weight = 6.0;
         }
 
         public Skirt(Serial serial)
@@ -107,6 +112,12 @@ namespace Server.Items
     [Flipable(0x1537, 0x1538)]
     public class Kilt : BaseOuterLegs
     {
+        public override int BasePhysicalResistance => 0;
+        public override int BaseFireResistance => 1;
+        public override int BaseColdResistance => 1;
+        public override int BasePoisonResistance => 1;
+        public override int BaseEnergyResistance => 1;
+
         [Constructable]
         public Kilt()
             : this(0)
@@ -143,6 +154,12 @@ namespace Server.Items
     [Flipable(0x279A, 0x27E5)]
     public class Hakama : BaseOuterLegs
     {
+        public override int BasePhysicalResistance => 0;
+        public override int BaseFireResistance => 1;
+        public override int BaseColdResistance => 1;
+        public override int BasePoisonResistance => 1;
+        public override int BaseEnergyResistance => 1;
+
         [Constructable]
         public Hakama()
             : this(0)
@@ -153,7 +170,7 @@ namespace Server.Items
         public Hakama(int hue)
             : base(0x279A, hue)
         {
-            Weight = 2.0;
+            Weight = 4.0;
         }
 
         public Hakama(Serial serial)
@@ -290,6 +307,11 @@ namespace Server.Items
 
     public class GuildedKilt : BaseOuterLegs
     {
+        public override int BasePhysicalResistance => 0;
+        public override int BaseFireResistance => 2;
+        public override int BaseColdResistance => 2;
+        public override int BasePoisonResistance => 2;
+        public override int BaseEnergyResistance => 2;
         public override int LabelNumber => 1109619;  // Guilded Kilt
 
         [Constructable]
@@ -324,6 +346,11 @@ namespace Server.Items
 
     public class CheckeredKilt : BaseOuterLegs
     {
+        public override int BasePhysicalResistance => 0;
+        public override int BaseFireResistance => 2;
+        public override int BaseColdResistance => 2;
+        public override int BasePoisonResistance => 2;
+        public override int BaseEnergyResistance => 2;
         public override int LabelNumber => 1109620;  // Checkered Kilt
 
         [Constructable]
@@ -358,6 +385,11 @@ namespace Server.Items
 
     public class FancyKilt : BaseOuterLegs
     {
+        public override int BasePhysicalResistance => 0;
+        public override int BaseFireResistance => 2;
+        public override int BaseColdResistance => 2;
+        public override int BasePoisonResistance => 2;
+        public override int BaseEnergyResistance => 2;
         public override int LabelNumber => 1109621;  // Fancy Kilt
 
         [Constructable]

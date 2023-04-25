@@ -10,7 +10,7 @@ namespace Server.Items
         public ShortSpear()
             : base(0x1403)
         {
-            Weight = 4.0;
+            Weight = 6.0;
         }
 
         public ShortSpear(Serial serial)
@@ -21,9 +21,9 @@ namespace Server.Items
         public override WeaponAbility PrimaryAbility => WeaponAbility.ShadowStrike;
         public override WeaponAbility SecondaryAbility => WeaponAbility.MortalStrike;
         public override int StrengthReq => 40;
-        public override int MinDamage => 10;
-        public override int MaxDamage => 13;
-        public override float Speed => 2.00f;
+        public override int MinDamage => 9;
+        public override int MaxDamage => 12;
+        public override float Speed => 1.20f;
 
         public override int InitMinHits => 31;
         public override int InitMaxHits => 70;

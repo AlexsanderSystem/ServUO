@@ -13,7 +13,7 @@ namespace Server.Items
         public ShepherdsCrook()
             : base(0xE81)
         {
-            Weight = 4.0;
+            Weight = 6.0;
         }
 
         public ShepherdsCrook(Serial serial)
@@ -24,9 +24,9 @@ namespace Server.Items
         public override WeaponAbility PrimaryAbility => WeaponAbility.CrushingBlow;
         public override WeaponAbility SecondaryAbility => WeaponAbility.Disarm;
         public override int StrengthReq => 20;
-        public override int MinDamage => 13;
-        public override int MaxDamage => 16;
-        public override float Speed => 2.75f;
+        public override int MinDamage => 10;
+        public override int MaxDamage => 12;
+        public override float Speed => 1.90f;
 
         public override int InitMinHits => 31;
         public override int InitMaxHits => 50;

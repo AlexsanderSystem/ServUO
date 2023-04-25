@@ -20,9 +20,9 @@ namespace Server.Items
 
         public override WeaponAbility PrimaryAbility => WeaponAbility.BleedAttack;
         public override WeaponAbility SecondaryAbility => WeaponAbility.MortalStrike;
-        public override int StrengthReq => 40;
-        public override int MinDamage => 15;
-        public override int MaxDamage => 18;
+        public override int StrengthReq => 75;
+        public override int MinDamage => 32;
+        public override int MaxDamage => 35;
         public override float Speed => 3.25f;
 
         public override int InitMinHits => 31;

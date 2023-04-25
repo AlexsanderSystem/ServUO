@@ -3,6 +3,11 @@ namespace Server.Items
     [Flipable(0x2B74, 0x316B)]
     public class HideChest : BaseArmor
     {
+        private bool _ElvesOnly;
+        
+        [CommandProperty(AccessLevel.GameMaster)]
+        public bool ElfOnly { get { return _ElvesOnly; } set { _ElvesOnly = value; } }
+        
         [Constructable]
         public HideChest()
             : base(0x2B74)

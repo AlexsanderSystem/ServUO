@@ -10,7 +10,7 @@ namespace Server.Items
         public Kama()
             : base(0x27AD)
         {
-            Weight = 7.0;
+            Weight = 4.0;
             Layer = Layer.TwoHanded;
         }
 
@@ -21,10 +21,10 @@ namespace Server.Items
 
         public override WeaponAbility PrimaryAbility => WeaponAbility.WhirlwindAttack;
         public override WeaponAbility SecondaryAbility => WeaponAbility.DefenseMastery;
-        public override int StrengthReq => 15;
-        public override int MinDamage => 10;
-        public override int MaxDamage => 13;
-        public override float Speed => 2.00f;
+        public override int StrengthReq => 40;
+        public override int MinDamage => 3;
+        public override int MaxDamage => 12;
+        public override float Speed => 1.20f;
 
         public override int DefHitSound => 0x232;
         public override int DefMissSound => 0x238;

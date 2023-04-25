@@ -35,7 +35,7 @@ namespace Server.Items
 
     public class ZooMemberSkirt : PlainDress
     {
-        public override int LabelNumber => 1073221; // Britannia Royal Zoo Member
+        public override int LabelNumber => 1073221; // Britannia Royal Zoo Member //REVISAR
 
         [Constructable]
         public ZooMemberSkirt()
@@ -416,6 +416,12 @@ namespace Server.Items
     [Flipable(0x230E, 0x230D)]
     public class GildedDress : BaseOuterTorso
     {
+        public override int BasePhysicalResistance => 0;
+        public override int BaseFireResistance => 2;
+        public override int BaseColdResistance => 2;
+        public override int BasePoisonResistance => 2;
+        public override int BaseEnergyResistance => 2;
+
         [Constructable]
         public GildedDress()
             : this(0)
@@ -426,7 +432,7 @@ namespace Server.Items
         public GildedDress(int hue)
             : base(0x230E, hue)
         {
-            Weight = 3.0;
+            Weight = 10.0;
         }
 
         public GildedDress(Serial serial)
@@ -452,6 +458,11 @@ namespace Server.Items
     [Flipable(0x1F00, 0x1EFF)]
     public class FancyDress : BaseOuterTorso
     {
+        public override int BasePhysicalResistance => 0;
+        public override int BaseFireResistance => 1;
+        public override int BaseColdResistance => 1;
+        public override int BasePoisonResistance => 1;
+        public override int BaseEnergyResistance => 1;
         [Constructable]
         public FancyDress()
             : this(0)
@@ -462,7 +473,7 @@ namespace Server.Items
         public FancyDress(int hue)
             : base(0x1F00, hue)
         {
-            Weight = 3.0;
+            Weight = 13.0;
         }
 
         public FancyDress(Serial serial)
@@ -618,7 +629,7 @@ namespace Server.Items
         }
     }
 
-    [Flipable]
+    [Flipable]  //REVISAR
     public class RewardRobe : BaseOuterTorso, IRewardItem
     {
         private int m_LabelNumber;
@@ -1085,6 +1096,11 @@ namespace Server.Items
     [Flipable]
     public class Robe : BaseOuterTorso, IArcaneEquip
     {
+        public override int BasePhysicalResistance => 0;
+        public override int BaseFireResistance => 2;
+        public override int BaseColdResistance => 2;
+        public override int BasePoisonResistance => 2;
+        public override int BaseEnergyResistance => 2;
         #region Arcane Impl
         private int m_MaxArcaneCharges, m_CurArcaneCharges;
 
@@ -1159,7 +1175,7 @@ namespace Server.Items
         public Robe(int hue)
             : base(0x1F03, hue)
         {
-            Weight = 3.0;
+            Weight = 13.0;
         }
 
         public Robe(Serial serial)
@@ -1219,6 +1235,12 @@ namespace Server.Items
 
     public class MonkRobe : BaseOuterTorso
     {
+        public override int BasePhysicalResistance => 0;
+        public override int BaseFireResistance => 2;
+        public override int BaseColdResistance => 2;
+        public override int BasePoisonResistance => 2;
+        public override int BaseEnergyResistance => 2;
+
         [Constructable]
         public MonkRobe()
             : this(0x21E)
@@ -1229,7 +1251,7 @@ namespace Server.Items
         public MonkRobe(int hue)
             : base(0x2687, hue)
         {
-            Weight = 1.0;
+            Weight = 11.0;
             StrRequirement = 0;
         }
 
@@ -1264,6 +1286,12 @@ namespace Server.Items
     [Flipable(0x1f01, 0x1f02)]
     public class PlainDress : BaseOuterTorso
     {
+        public override int BasePhysicalResistance => 0;
+        public override int BaseFireResistance => 2;
+        public override int BaseColdResistance => 2;
+        public override int BasePoisonResistance => 2;
+        public override int BaseEnergyResistance => 2;
+
         [Constructable]
         public PlainDress()
             : this(0)
@@ -1300,6 +1328,12 @@ namespace Server.Items
     [Flipable(0x2799, 0x27E4)]
     public class Kamishimo : BaseOuterTorso
     {
+        public override int BasePhysicalResistance => 0;
+        public override int BaseFireResistance => 2;
+        public override int BaseColdResistance => 2;
+        public override int BasePoisonResistance => 2;
+        public override int BaseEnergyResistance => 2;
+        
         [Constructable]
         public Kamishimo()
             : this(0)
@@ -1310,7 +1344,7 @@ namespace Server.Items
         public Kamishimo(int hue)
             : base(0x2799, hue)
         {
-            Weight = 3.0;
+            Weight = 15.0;
         }
 
         public Kamishimo(Serial serial)
@@ -1336,6 +1370,12 @@ namespace Server.Items
     [Flipable(0x279C, 0x27E7)]
     public class HakamaShita : BaseOuterTorso
     {
+        public override int BasePhysicalResistance => 0;
+        public override int BaseFireResistance => 2;
+        public override int BaseColdResistance => 2;
+        public override int BasePoisonResistance => 2;
+        public override int BaseEnergyResistance => 2;
+        
         [Constructable]
         public HakamaShita()
             : this(0)
@@ -1346,7 +1386,7 @@ namespace Server.Items
         public HakamaShita(int hue)
             : base(0x279C, hue)
         {
-            Weight = 3.0;
+            Weight = 8.0;
         }
 
         public HakamaShita(Serial serial)
@@ -1372,6 +1412,12 @@ namespace Server.Items
     [Flipable(0x2782, 0x27CD)]
     public class MaleKimono : BaseOuterTorso
     {
+        public override int BasePhysicalResistance => 0;
+        public override int BaseFireResistance => 2;
+        public override int BaseColdResistance => 2;
+        public override int BasePoisonResistance => 2;
+        public override int BaseEnergyResistance => 2;
+        
         [Constructable]
         public MaleKimono()
             : this(0)
@@ -1382,7 +1428,7 @@ namespace Server.Items
         public MaleKimono(int hue)
             : base(0x2782, hue)
         {
-            Weight = 3.0;
+            Weight = 13.0;
         }
 
         public override bool AllowFemaleWearer => false;
@@ -1410,6 +1456,12 @@ namespace Server.Items
     [Flipable(0x2783, 0x27CE)]
     public class FemaleKimono : BaseOuterTorso
     {
+        public override int BasePhysicalResistance => 0;
+        public override int BaseFireResistance => 2;
+        public override int BaseColdResistance => 2;
+        public override int BasePoisonResistance => 2;
+        public override int BaseEnergyResistance => 2;
+        
         [Constructable]
         public FemaleKimono()
             : this(0)
@@ -1420,7 +1472,7 @@ namespace Server.Items
         public FemaleKimono(int hue)
             : base(0x2783, hue)
         {
-            Weight = 3.0;
+            Weight = 13.0;
         }
 
         public override bool AllowMaleWearer => false;
@@ -1448,6 +1500,12 @@ namespace Server.Items
     [Flipable(0x2FB9, 0x3173)]
     public class MaleElvenRobe : BaseOuterTorso
     {
+        public override int BasePhysicalResistance => 0;
+        public override int BaseFireResistance => 3;
+        public override int BaseColdResistance => 3;
+        public override int BasePoisonResistance => 3;
+        public override int BaseEnergyResistance => 3;
+        
         [Constructable]
         public MaleElvenRobe()
             : this(0)
@@ -1458,7 +1516,7 @@ namespace Server.Items
         public MaleElvenRobe(int hue)
             : base(0x2FB9, hue)
         {
-            Weight = 2.0;
+            Weight = 12.0;
         }
 
         public MaleElvenRobe(Serial serial)
@@ -1484,6 +1542,12 @@ namespace Server.Items
     [Flipable(0x2FBA, 0x3174)]
     public class FemaleElvenRobe : BaseOuterTorso
     {
+        public override int BasePhysicalResistance => 0;
+        public override int BaseFireResistance => 3;
+        public override int BaseColdResistance => 3;
+        public override int BasePoisonResistance => 3;
+        public override int BaseEnergyResistance => 3;
+        
         [Constructable]
         public FemaleElvenRobe()
             : this(0)
@@ -1494,7 +1558,7 @@ namespace Server.Items
         public FemaleElvenRobe(int hue)
             : base(0x2FBA, hue)
         {
-            Weight = 2.0;
+            Weight = 12.0;
         }
 
         public override bool AllowMaleWearer => false;
@@ -1521,8 +1585,13 @@ namespace Server.Items
 
     public class FloweredDress : BaseOuterTorso
     {
+        public override int BasePhysicalResistance => 0;
+        public override int BaseFireResistance => 2;
+        public override int BaseColdResistance => 2;
+        public override int BasePoisonResistance => 2;
+        public override int BaseEnergyResistance => 2;
         public override int LabelNumber => 1109622;  // Flowered Dress
-
+        
         [Constructable]
         public FloweredDress()
             : this(0)
@@ -1533,6 +1602,7 @@ namespace Server.Items
         public FloweredDress(int hue)
             : base(0x781E, hue)
         {
+            Weight = 12.0;
         }
 
         public FloweredDress(Serial serial)
@@ -1555,6 +1625,12 @@ namespace Server.Items
 
     public class EveningGown : BaseOuterTorso
     {
+        public override int BasePhysicalResistance => 0;
+        public override int BaseFireResistance => 2;
+        public override int BaseColdResistance => 2;
+        public override int BasePoisonResistance => 2;
+        public override int BaseEnergyResistance => 2;
+        
         public override int LabelNumber => 1109625;  // Evening Gown
 
         [Constructable]
@@ -1589,6 +1665,11 @@ namespace Server.Items
 
     public class Epaulette : BaseClothing
     {
+        public override int BasePhysicalResistance => 0;
+        public override int BaseFireResistance => 2;
+        public override int BaseColdResistance => 2;
+        public override int BasePoisonResistance => 2;
+        public override int BaseEnergyResistance => 2;        
         public override int LabelNumber => 1123325;  // Epaulette
 
         [Constructable]
@@ -1601,7 +1682,7 @@ namespace Server.Items
         public Epaulette(int hue)
             : base(0x9985, Layer.OuterTorso, hue)
         {
-            Weight = 1.0;
+            Weight = 11.0;
         }
 
         public Epaulette(Serial serial)

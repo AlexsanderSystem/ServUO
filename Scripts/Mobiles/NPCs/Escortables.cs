@@ -5,25 +5,21 @@ using System;
 
 namespace Server.Engines.Quests
 {
-    public class NewHavenAlchemistEscortQuest : BaseQuest
+    public class EscoltaParaCurandeiro : BaseQuest
     {
-        public NewHavenAlchemistEscortQuest()
+        public EscoltaParaCurandeiro()
             : base()
         {
-            AddObjective(new EscortObjective("the New Haven Alchemist"));
-            AddReward(new BaseReward(typeof(Gold), 500, 1062577));
+            AddObjective(new EscortObjective("Curandeiro de Hrafnsfjall"));
+            AddReward(new BaseReward(typeof(Gold), 130, 1062577));
         }
 
-        /* An escort to the New Haven Alchemist in The bottled Imp */
         public override object Title => 1072314;
 
-        /* I need some potions before I set out for a long journey. Can you take me to the alchemist in The Bottled Imp? */
         public override object Description => 1042769;
 
-        /* I wish you would reconsider my offer.  I'll be waiting right here for someone brave enough to assist me. */
         public override object Refuse => 1072288;
 
-        /* We have not yet arrived at the New Haven Alchemist in The Bottled Imp. Let's keep going. */
         public override object Uncomplete => 1072326;
 
         public override void Serialize(GenericWriter writer)
@@ -420,7 +416,7 @@ namespace Server.Engines.Quests
     {
         private static readonly Type[] m_Quests = new Type[]
         {
-            typeof(NewHavenAlchemistEscortQuest),
+            typeof(EscoltaParaCurandeiro),
             typeof(NewHavenBardEscortQuest),
             typeof(NewHavenWarriorEscortQuest),
             typeof(NewHavenTailorEscortQuest),
@@ -436,7 +432,7 @@ namespace Server.Engines.Quests
 
         private static readonly string[] m_Destinations = new string[]
         {
-            "the New Haven Alchemist",
+            "Curandeiro de Hrafnsfjall",
             "the New Haven Bard",
             "the New Haven Warrior",
             "the New Haven Tailor",
@@ -839,7 +835,7 @@ namespace Server.Engines.Quests
         [Constructable]
         public NewHavenPeasant()
         {
-            Title = "the peasant";
+            Title = "Camponês";
         }
 
         public NewHavenPeasant(Serial serial)

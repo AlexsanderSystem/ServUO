@@ -20,10 +20,10 @@ namespace Server.Items
 
         public override WeaponAbility PrimaryAbility => WeaponAbility.CrushingBlow;
         public override WeaponAbility SecondaryAbility => WeaponAbility.ParalyzingBlow;
-        public override int StrengthReq => 40;
-        public override int MinDamage => 15;
-        public override int MaxDamage => 19;
-        public override float Speed => 3.75f;
+        public override int StrengthReq => 65;
+        public override int MinDamage => 19;
+        public override int MaxDamage => 21;
+        public override float Speed => 2.20f;
 
         public override int DefHitSound => 0x237;
         public override int DefMissSound => 0x23A;

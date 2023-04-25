@@ -31,24 +31,24 @@ namespace Server.Mobiles
                 Name = NameList.RandomName("male");
 				SetWearable(new ShortPants(), Utility.RandomNeutralHue(), 1);
             }
-            Title = "the peasant";
+            Title = "Camponês";
             HairItemID = Race.RandomHair(Female);
             HairHue = Race.RandomHairHue();
             Race.RandomFacialHair(this);
 
 			SetWearable(new Katana(), dropChance: 1);
 
-            SetStr(26, 26);
-            SetDex(21, 21);
+            SetStr(40, 60);
+            SetDex(40, 60);
             SetInt(16, 16);
 
-            SetDamage(10, 23);
+            SetDamage(10, 15);
 
-            SetSkill(SkillName.Tactics, 5, 27);
-            SetSkill(SkillName.Wrestling, 5, 5);
-            SetSkill(SkillName.Swords, 5, 27);
+            SetSkill(SkillName.Tactics, 20, 30);
+            SetSkill(SkillName.Wrestling, 20, 30);
+            SetSkill(SkillName.Swords, 20, 30);
 
-            Fame = 0;
+            Fame = 1000;
             Karma = 0;
 
 			SetWearable(new Sandals(), Utility.RandomNeutralHue(), 1);
@@ -62,7 +62,7 @@ namespace Server.Mobiles
                     break;
             }
 
-            PackGold(0, 25);
+            PackGold(0, 0);
         }
 
         public HirePeasant(Serial serial)

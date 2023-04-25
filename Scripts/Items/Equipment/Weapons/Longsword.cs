@@ -20,15 +20,15 @@ namespace Server.Items
 
         public override WeaponAbility PrimaryAbility => WeaponAbility.ArmorIgnore;
         public override WeaponAbility SecondaryAbility => WeaponAbility.ConcussionBlow;
-        public override int StrengthReq => 35;
-        public override int MinDamage => 14;
-        public override int MaxDamage => 18;
-        public override float Speed => 3.50f;
+        public override int StrengthReq => 65;
+        public override int MinDamage => 24;
+        public override int MaxDamage => 24;
+        public override float Speed => 2.50f;
 
         public override int DefHitSound => 0x237;
         public override int DefMissSound => 0x23A;
         public override int InitMinHits => 31;
-        public override int InitMaxHits => 110;
+        public override int InitMaxHits => 70;
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

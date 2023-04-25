@@ -42,7 +42,7 @@ namespace Server.Items
 
     public class ZooMemberFloppyHat : FloppyHat
     {
-        public override int LabelNumber => 1073221; // Britannia Royal Zoo Member
+        public override int LabelNumber => 1073553; // Britannia Royal Zoo Member
 
         [Constructable]
         public ZooMemberFloppyHat()
@@ -112,11 +112,11 @@ namespace Server.Items
     {
         public override int LabelNumber => 1073256;// Jester Hat of Chuckles - Museum of Vesper Replica
 
-        public override int BasePhysicalResistance => 12;
-        public override int BaseFireResistance => 12;
-        public override int BaseColdResistance => 12;
-        public override int BasePoisonResistance => 12;
-        public override int BaseEnergyResistance => 12;
+        public override int BasePhysicalResistance => 6;
+        public override int BaseFireResistance => 6;
+        public override int BaseColdResistance => 6;
+        public override int BasePoisonResistance => 6;
+        public override int BaseEnergyResistance => 6;
 
         public override int InitMinHits => 100;
         public override int InitMaxHits => 100;
@@ -158,14 +158,14 @@ namespace Server.Items
     {
         public override int LabelNumber => 1073255;// Nystul's Wizard's Hat - Museum of Vesper Replica
 
-        public override int BasePhysicalResistance => 10;
-        public override int BaseFireResistance => 10;
-        public override int BaseColdResistance => 10;
-        public override int BasePoisonResistance => 10;
-        public override int BaseEnergyResistance => 25;
+        public override int BasePhysicalResistance => 6;
+        public override int BaseFireResistance => 6;
+        public override int BaseColdResistance => 6;
+        public override int BasePoisonResistance => 6;
+        public override int BaseEnergyResistance => 6;
 
-        public override int InitMinHits => 100;
-        public override int InitMaxHits => 100;
+        public override int InitMinHits => 20;
+        public override int InitMaxHits => 30;
 
         [Constructable]
         public NystulsWizardsHat()
@@ -340,9 +340,9 @@ namespace Server.Items
     public class Kasa : BaseHat
     {
         public override int BasePhysicalResistance => 0;
-        public override int BaseFireResistance => 5;
-        public override int BaseColdResistance => 9;
-        public override int BasePoisonResistance => 5;
+        public override int BaseFireResistance => 2;
+        public override int BaseColdResistance => 2;
+        public override int BasePoisonResistance => 2;
         public override int BaseEnergyResistance => 5;
 
         public override int InitMinHits => 20;
@@ -381,11 +381,11 @@ namespace Server.Items
     [Flipable(0x278F, 0x27DA)]
     public class ClothNinjaHood : BaseHat
     {
-        public override int BasePhysicalResistance => 3;
-        public override int BaseFireResistance => 3;
-        public override int BaseColdResistance => 6;
-        public override int BasePoisonResistance => 9;
-        public override int BaseEnergyResistance => 9;
+        public override int BasePhysicalResistance => 0;
+        public override int BaseFireResistance => 0;
+        public override int BaseColdResistance => 2;
+        public override int BasePoisonResistance => 2;
+        public override int BaseEnergyResistance => 2;
 
         public override int InitMinHits => 20;
         public override int InitMaxHits => 30;
@@ -420,14 +420,14 @@ namespace Server.Items
         }
     }
 
-    [Flipable(0x2306, 0x2305)]
+    [Flipable(0x2306, 0x2305)] //REVISAR
     public class FlowerGarland : BaseHat
     {
         public override int BasePhysicalResistance => 3;
         public override int BaseFireResistance => 3;
-        public override int BaseColdResistance => 6;
-        public override int BasePoisonResistance => 9;
-        public override int BaseEnergyResistance => 9;
+        public override int BaseColdResistance => 3;
+        public override int BasePoisonResistance => 3;
+        public override int BaseEnergyResistance => 3;
 
         public override int InitMinHits => 20;
         public override int InitMaxHits => 30;
@@ -466,10 +466,10 @@ namespace Server.Items
     public class FloppyHat : BaseHat
     {
         public override int BasePhysicalResistance => 0;
-        public override int BaseFireResistance => 5;
-        public override int BaseColdResistance => 9;
-        public override int BasePoisonResistance => 5;
-        public override int BaseEnergyResistance => 5;
+        public override int BaseFireResistance => 1;
+        public override int BaseColdResistance => 1;
+        public override int BasePoisonResistance => 1;
+        public override int BaseEnergyResistance => 1;
 
         public override int InitMinHits => 20;
         public override int InitMaxHits => 30;
@@ -508,10 +508,10 @@ namespace Server.Items
     public class WideBrimHat : BaseHat
     {
         public override int BasePhysicalResistance => 0;
-        public override int BaseFireResistance => 5;
-        public override int BaseColdResistance => 9;
-        public override int BasePoisonResistance => 5;
-        public override int BaseEnergyResistance => 5;
+        public override int BaseFireResistance => 1;
+        public override int BaseColdResistance => 1;
+        public override int BasePoisonResistance => 1;
+        public override int BaseEnergyResistance => 1;
 
         public override int InitMinHits => 20;
         public override int InitMaxHits => 30;
@@ -550,10 +550,10 @@ namespace Server.Items
     public class Cap : BaseHat
     {
         public override int BasePhysicalResistance => 0;
-        public override int BaseFireResistance => 5;
-        public override int BaseColdResistance => 9;
-        public override int BasePoisonResistance => 5;
-        public override int BaseEnergyResistance => 5;
+        public override int BaseFireResistance => 1;
+        public override int BaseColdResistance => 1;
+        public override int BasePoisonResistance => 1;
+        public override int BaseEnergyResistance => 1;
 
         public override int InitMinHits => 20;
         public override int InitMaxHits => 30;
@@ -592,13 +592,13 @@ namespace Server.Items
     public class SkullCap : BaseHat
     {
         public override int BasePhysicalResistance => 0;
-        public override int BaseFireResistance => 3;
-        public override int BaseColdResistance => 5;
-        public override int BasePoisonResistance => 8;
-        public override int BaseEnergyResistance => 8;
+        public override int BaseFireResistance => 2;
+        public override int BaseColdResistance => 2;
+        public override int BasePoisonResistance => 2;
+        public override int BaseEnergyResistance => 2;
 
         public override int InitMinHits => 14;
-        public override int InitMaxHits => 28;
+        public override int InitMaxHits => 24;
 
         [Constructable]
         public SkullCap()
@@ -634,10 +634,10 @@ namespace Server.Items
     public class Bandana : BaseHat
     {
         public override int BasePhysicalResistance => 0;
-        public override int BaseFireResistance => 3;
-        public override int BaseColdResistance => 5;
-        public override int BasePoisonResistance => 8;
-        public override int BaseEnergyResistance => 8;
+        public override int BaseFireResistance => 2;
+        public override int BaseColdResistance => 2;
+        public override int BasePoisonResistance => 2;
+        public override int BaseEnergyResistance => 2;
 
         public override int InitMinHits => 20;
         public override int InitMaxHits => 30;
@@ -679,7 +679,7 @@ namespace Server.Items
 
         public override int BasePhysicalResistance => 5;
         public override int BaseFireResistance => 3;
-        public override int BaseColdResistance => 8;
+        public override int BaseColdResistance => 3;
         public override int BasePoisonResistance => 4;
         public override int BaseEnergyResistance => 4;
 
@@ -727,10 +727,10 @@ namespace Server.Items
         public CraftSystem RepairSystem => DefTailoring.CraftSystem;
 
         public override int BasePhysicalResistance => 2;
-        public override int BaseFireResistance => 6;
-        public override int BaseColdResistance => 8;
-        public override int BasePoisonResistance => 1;
-        public override int BaseEnergyResistance => 7;
+        public override int BaseFireResistance => 4;
+        public override int BaseColdResistance => 4;
+        public override int BasePoisonResistance => 4;
+        public override int BaseEnergyResistance => 4;
 
         public override int InitMinHits => 20;
         public override int InitMaxHits => 30;
@@ -775,11 +775,11 @@ namespace Server.Items
     {
         public CraftSystem RepairSystem => DefTailoring.CraftSystem;
 
-        public override int BasePhysicalResistance => 6;
-        public override int BaseFireResistance => 9;
+        public override int BasePhysicalResistance => 3;
+        public override int BaseFireResistance => 2;
         public override int BaseColdResistance => 0;
-        public override int BasePoisonResistance => 4;
-        public override int BaseEnergyResistance => 5;
+        public override int BasePoisonResistance => 2;
+        public override int BaseEnergyResistance => 2;
 
         public override int InitMinHits => 20;
         public override int InitMaxHits => 30;
@@ -824,11 +824,11 @@ namespace Server.Items
     {
         public CraftSystem RepairSystem => DefTailoring.CraftSystem;
 
-        public override int BasePhysicalResistance => 3;
+        public override int BasePhysicalResistance => 4;
         public override int BaseFireResistance => 0;
-        public override int BaseColdResistance => 6;
-        public override int BasePoisonResistance => 10;
-        public override int BaseEnergyResistance => 5;
+        public override int BaseColdResistance => 2;
+        public override int BasePoisonResistance => 4;
+        public override int BaseEnergyResistance => 2;
 
         public override int InitMinHits => 20;
         public override int InitMaxHits => 30;
@@ -873,10 +873,10 @@ namespace Server.Items
     public class TallStrawHat : BaseHat
     {
         public override int BasePhysicalResistance => 0;
-        public override int BaseFireResistance => 5;
-        public override int BaseColdResistance => 9;
-        public override int BasePoisonResistance => 5;
-        public override int BaseEnergyResistance => 5;
+        public override int BaseFireResistance => 1;
+        public override int BaseColdResistance => 1;
+        public override int BasePoisonResistance => 1;
+        public override int BaseEnergyResistance => 1;
 
         public override int InitMinHits => 20;
         public override int InitMaxHits => 30;
@@ -915,10 +915,10 @@ namespace Server.Items
     public class StrawHat : BaseHat
     {
         public override int BasePhysicalResistance => 0;
-        public override int BaseFireResistance => 5;
-        public override int BaseColdResistance => 9;
-        public override int BasePoisonResistance => 5;
-        public override int BaseEnergyResistance => 5;
+        public override int BaseFireResistance => 2;
+        public override int BaseColdResistance => 3;
+        public override int BasePoisonResistance => 2;
+        public override int BaseEnergyResistance => 2;
 
         public override int InitMinHits => 20;
         public override int InitMaxHits => 30;
@@ -956,11 +956,11 @@ namespace Server.Items
 
     public class OrcishKinMask : BaseHat
     {
-        public override int BasePhysicalResistance => 1;
+        public override int BasePhysicalResistance => 7;
         public override int BaseFireResistance => 1;
-        public override int BaseColdResistance => 7;
-        public override int BasePoisonResistance => 7;
-        public override int BaseEnergyResistance => 8;
+        public override int BaseColdResistance => 1;
+        public override int BasePoisonResistance => 1;
+        public override int BaseEnergyResistance => 1;
 
         public override int InitMinHits => 20;
         public override int InitMaxHits => 30;
@@ -971,7 +971,7 @@ namespace Server.Items
             return false;
         }
 
-        public override string DefaultName => "a mask of orcish kin";
+        public override string DefaultName => "Uma máscara de parentes orcs";
 
         [Constructable]
         public OrcishKinMask()
@@ -1029,11 +1029,11 @@ namespace Server.Items
     {
         public CraftSystem RepairSystem => DefTailoring.CraftSystem;
 
-        public override int BasePhysicalResistance => 1;
+        public override int BasePhysicalResistance => 5;
         public override int BaseFireResistance => 1;
-        public override int BaseColdResistance => 7;
-        public override int BasePoisonResistance => 7;
-        public override int BaseEnergyResistance => 8;
+        public override int BaseColdResistance => 1;
+        public override int BasePoisonResistance => 1;
+        public override int BaseEnergyResistance => 1;
 
         public override int InitMinHits => 20;
         public override int InitMaxHits => 30;
@@ -1074,9 +1074,9 @@ namespace Server.Items
     {
         public override int BasePhysicalResistance => 3;
         public override int BaseFireResistance => 0;
-        public override int BaseColdResistance => 6;
-        public override int BasePoisonResistance => 10;
-        public override int BaseEnergyResistance => 5;
+        public override int BaseColdResistance => 2;
+        public override int BasePoisonResistance => 2;
+        public override int BaseEnergyResistance => 2;
 
         public override int InitMinHits => 20;
         public override int InitMaxHits => 30;
@@ -1129,11 +1129,11 @@ namespace Server.Items
 
     public class WizardsHat : BaseHat
     {
-        public override int BasePhysicalResistance => 0;
-        public override int BaseFireResistance => 5;
-        public override int BaseColdResistance => 9;
-        public override int BasePoisonResistance => 5;
-        public override int BaseEnergyResistance => 5;
+        public override int BasePhysicalResistance => 1;
+        public override int BaseFireResistance => 3;
+        public override int BaseColdResistance => 3;
+        public override int BasePoisonResistance => 3;
+        public override int BaseEnergyResistance => 3;
 
         public override int InitMinHits => 20;
         public override int InitMaxHits => 30;
@@ -1218,10 +1218,10 @@ namespace Server.Items
     public class Bonnet : BaseHat
     {
         public override int BasePhysicalResistance => 0;
-        public override int BaseFireResistance => 5;
-        public override int BaseColdResistance => 9;
-        public override int BasePoisonResistance => 5;
-        public override int BaseEnergyResistance => 5;
+        public override int BaseFireResistance => 2;
+        public override int BaseColdResistance => 2;
+        public override int BasePoisonResistance => 2;
+        public override int BaseEnergyResistance => 2;
 
         public override int InitMinHits => 20;
         public override int InitMaxHits => 30;
@@ -1259,10 +1259,10 @@ namespace Server.Items
     public class FeatheredHat : BaseHat
     {
         public override int BasePhysicalResistance => 0;
-        public override int BaseFireResistance => 5;
-        public override int BaseColdResistance => 9;
-        public override int BasePoisonResistance => 5;
-        public override int BaseEnergyResistance => 5;
+        public override int BaseFireResistance => 1;
+        public override int BaseColdResistance => 1;
+        public override int BasePoisonResistance => 1;
+        public override int BaseEnergyResistance => 1;
 
         public override int InitMinHits => 20;
         public override int InitMaxHits => 30;
@@ -1300,10 +1300,10 @@ namespace Server.Items
     public class TricorneHat : BaseHat
     {
         public override int BasePhysicalResistance => 0;
-        public override int BaseFireResistance => 5;
-        public override int BaseColdResistance => 9;
-        public override int BasePoisonResistance => 5;
-        public override int BaseEnergyResistance => 5;
+        public override int BaseFireResistance => 1;
+        public override int BaseColdResistance => 1;
+        public override int BasePoisonResistance => 1;
+        public override int BaseEnergyResistance => 1;
 
         public override int InitMinHits => 20;
         public override int InitMaxHits => 30;
@@ -1341,10 +1341,10 @@ namespace Server.Items
     public class JesterHat : BaseHat
     {
         public override int BasePhysicalResistance => 0;
-        public override int BaseFireResistance => 5;
-        public override int BaseColdResistance => 9;
-        public override int BasePoisonResistance => 5;
-        public override int BaseEnergyResistance => 5;
+        public override int BaseFireResistance => 3;
+        public override int BaseColdResistance => 3;
+        public override int BasePoisonResistance => 3;
+        public override int BaseEnergyResistance => 3;
 
         public override int InitMinHits => 20;
         public override int InitMaxHits => 30;
@@ -1391,6 +1391,8 @@ namespace Server.Items
 
         public override int InitMinHits => 20;
         public override int InitMaxHits => 30;
+
+
 
         [Constructable]
         public ChefsToque()

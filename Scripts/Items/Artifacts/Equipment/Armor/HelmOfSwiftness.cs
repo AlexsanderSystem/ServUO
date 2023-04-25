@@ -6,9 +6,6 @@ namespace Server.Items
 
         private bool _ElfOnly;
 
-        [CommandProperty(AccessLevel.GameMaster)]
-        public bool ElfOnly { get { return _ElfOnly; } set { _ElfOnly = value; InvalidateProperties(); } }
-
         [Constructable]
         public HelmOfSwiftness()
             : base()

@@ -23,10 +23,10 @@ namespace Server.Items
         public override Item Ammo => new Arrow();
         public override WeaponAbility PrimaryAbility => WeaponAbility.ArmorPierce;
         public override WeaponAbility SecondaryAbility => WeaponAbility.DoubleShot;
-        public override int StrengthReq => 35;
-        public override int MinDamage => 13;
-        public override int MaxDamage => 17;
-        public override float Speed => 3.25f;
+        public override int StrengthReq => 70;
+        public override int MinDamage => 24;
+        public override int MaxDamage => 27;
+        public override float Speed => 2.60f;
 
         public override int DefMaxRange => 10;
         public override int InitMinHits => 55;

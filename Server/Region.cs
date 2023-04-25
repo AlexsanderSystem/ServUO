@@ -943,7 +943,7 @@ namespace Server
 			}
 			else if (message)
 			{
-				m.SendLocalizedMessage(1005040); // You've committed a criminal act!!
+				m.SendLocalizedMessage(1005040); // You've committed a criminal act!! //Jogador Criminoso
 			}
 		}
 

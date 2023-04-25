@@ -9,7 +9,7 @@ namespace Server.Items
         public PlateDo()
             : base(0x277D)
         {
-            Weight = 10.0;
+            Weight = 30.0;
         }
 
         public PlateDo(Serial serial)
@@ -17,10 +17,10 @@ namespace Server.Items
         {
         }
 
-        public override int BasePhysicalResistance => 5;
-        public override int BaseFireResistance => 3;
+        public override int BasePhysicalResistance => 10;
+        public override int BaseFireResistance => 2;
         public override int BaseColdResistance => 2;
-        public override int BasePoisonResistance => 3;
+        public override int BasePoisonResistance => 2;
         public override int BaseEnergyResistance => 2;
         public override int InitMinHits => 60;
         public override int InitMaxHits => 70;

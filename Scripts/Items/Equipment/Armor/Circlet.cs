@@ -3,6 +3,11 @@ namespace Server.Items
     [Flipable(0x2B6E, 0x3165)]
     public class Circlet : BaseArmor
     {
+        private bool _ElvesOnly;
+        
+        [CommandProperty(AccessLevel.GameMaster)]
+        public bool ElfOnly { get { return _ElvesOnly; } set { _ElvesOnly = value; } }
+        
         [Constructable]
         public Circlet()
             : base(0x2B6E)

@@ -115,8 +115,11 @@ namespace Server.Items
 
         public Cloak(Serial serial)
             : base(serial)
-        {
-        }
+        {            
+        }  
+
+        public override int InitMinHits => 21;
+        public override int InitMaxHits => 23;
 
         public override void Serialize(GenericWriter writer)
         {
@@ -242,10 +245,13 @@ namespace Server.Items
             : base(0x1515, hue)
         {
             Weight = 5.0;
-            LootType = LootType.Blessed;
+           // LootType = LootType.Blessed;
+
 
             m_LabelNumber = labelNumber;
         }
+        public override int InitMinHits => 21;
+        public override int InitMaxHits => 23;
 
         public RewardCloak(Serial serial)
             : base(serial)
@@ -278,9 +284,16 @@ namespace Server.Items
         }
     }
 
+    [Alterable(typeof(DefTailoring), typeof(LeatherTalons), true)]
     [Flipable(0x230A, 0x2309)]
+
     public class FurCape : BaseCloak
     {
+        public override int BaseFireResistance => 4;
+        public override int BaseColdResistance => 2;
+        public override int BasePoisonResistance => 2;
+        public override int BaseEnergyResistance => 0;
+        
         [Constructable]
         public FurCape()
             : this(0)
@@ -291,13 +304,16 @@ namespace Server.Items
         public FurCape(int hue)
             : base(0x230A, hue)
         {
-            Weight = 4.0;
+            Weight = 10.0;
         }
 
         public FurCape(Serial serial)
             : base(serial)
         {
         }
+
+        public override int InitMinHits => 25;
+        public override int InitMaxHits => 30;
 
         public override void Serialize(GenericWriter writer)
         {

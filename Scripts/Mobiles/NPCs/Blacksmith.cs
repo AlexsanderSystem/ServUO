@@ -14,7 +14,7 @@ namespace Server.Mobiles
 
         [Constructable]
         public Blacksmith()
-            : base("the blacksmith")
+            : base("Ferreiro")
         {
             SetSkill(SkillName.ArmsLore, 36.0, 68.0);
             SetSkill(SkillName.Blacksmith, 65.0, 88.0);
@@ -64,6 +64,19 @@ namespace Server.Mobiles
 			SetWearable(new Bascinet(), dropChance: 1);
 			SetWearable(new SmithHammer(), dropChance: 1);
         }
+
+                public override bool HandlesOnSpeech(Mobile from)
+{
+    return true;
+}
+
+public override void OnSpeech(SpeechEventArgs e)
+{
+    if (e.Speech.ToLower() == "oi")
+    {
+        Say("Olá! Estou trabalhando agora. Se precisa vender algo avise.", e.Mobile);
+    }
+}
 
         #region Bulk Orders
         public override BODType BODType => BODType.Smith;

@@ -10,7 +10,7 @@ namespace Server.Items
         public WarFork()
             : base(0x1405)
         {
-            Weight = 9.0;
+            Weight = 4.0;
         }
 
         public WarFork(Serial serial)
@@ -21,9 +21,9 @@ namespace Server.Items
         public override WeaponAbility PrimaryAbility => WeaponAbility.BleedAttack;
         public override WeaponAbility SecondaryAbility => WeaponAbility.Disarm;
         public override int StrengthReq => 45;
-        public override int MinDamage => 10;
-        public override int MaxDamage => 14;
-        public override float Speed => 2.50f;
+        public override int MinDamage => 13;
+        public override int MaxDamage => 17;
+        public override float Speed => 1.50f;
 
         public override int DefHitSound => 0x236;
         public override int DefMissSound => 0x238;

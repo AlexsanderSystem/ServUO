@@ -10,7 +10,7 @@ namespace Server.Items
         public LargeBattleAxe()
             : base(0x13FB)
         {
-            Weight = 6.0;
+            Weight = 8.0;
         }
 
         public LargeBattleAxe(Serial serial)
@@ -20,9 +20,9 @@ namespace Server.Items
 
         public override WeaponAbility PrimaryAbility => WeaponAbility.WhirlwindAttack;
         public override WeaponAbility SecondaryAbility => WeaponAbility.BleedAttack;
-        public override int StrengthReq => 80;
-        public override int MinDamage => 17;
-        public override int MaxDamage => 20;
+        public override int StrengthReq => 75;
+        public override int MinDamage => 31;
+        public override int MaxDamage => 43;
         public override float Speed => 3.75f;
 
         public override int InitMinHits => 31;

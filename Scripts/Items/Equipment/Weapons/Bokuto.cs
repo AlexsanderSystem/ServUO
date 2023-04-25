@@ -7,7 +7,7 @@ namespace Server.Items
         public Bokuto()
             : base(0x27A8)
         {
-            Weight = 7.0;
+            Weight = 10.0;
         }
 
         public Bokuto(Serial serial)
@@ -17,7 +17,7 @@ namespace Server.Items
 
         public override WeaponAbility PrimaryAbility => WeaponAbility.Feint;
         public override WeaponAbility SecondaryAbility => WeaponAbility.NerveStrike;
-        public override int StrengthReq => 20;
+        public override int StrengthReq => 50;
         public override int MinDamage => 10;
         public override int MaxDamage => 12;
         public override float Speed => 2.00f;

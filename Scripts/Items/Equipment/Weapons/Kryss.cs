@@ -10,7 +10,7 @@ namespace Server.Items
         public Kryss()
             : base(0x1401)
         {
-            Weight = 2.0;
+            Weight = 4.0;
         }
 
         public Kryss(Serial serial)
@@ -22,13 +22,13 @@ namespace Server.Items
         public override WeaponAbility SecondaryAbility => WeaponAbility.InfectiousStrike;
         public override int StrengthReq => 10;
         public override int MinDamage => 10;
-        public override int MaxDamage => 12;
-        public override float Speed => 2.00f;
+        public override int MaxDamage => 20;
+        public override float Speed => 1.20f;
 
         public override int DefHitSound => 0x23C;
         public override int DefMissSound => 0x238;
         public override int InitMinHits => 31;
-        public override int InitMaxHits => 90;
+        public override int InitMaxHits => 70;
         public override SkillName DefSkill => SkillName.Fencing;
         public override WeaponType DefType => WeaponType.Piercing;
         public override WeaponAnimation DefAnimation => WeaponAnimation.Pierce1H;

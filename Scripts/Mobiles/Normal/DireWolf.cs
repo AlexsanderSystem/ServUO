@@ -1,6 +1,6 @@
 namespace Server.Mobiles
 {
-    [CorpseName("a dire wolf corpse")]
+    [CorpseName("Corpo do Lobo Feroz")]
     [TypeAlias("Server.Mobiles.Direwolf")]
     public class DireWolf : BaseCreature
     {
@@ -8,7 +8,7 @@ namespace Server.Mobiles
         public DireWolf()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a dire wolf";
+            Name = "Lobo Feroz";
             Body = 23;
             BaseSoundID = 0xE5;
 
@@ -16,10 +16,10 @@ namespace Server.Mobiles
             SetDex(81, 105);
             SetInt(36, 60);
 
-            SetHits(58, 72);
+            SetHits(80, 120);
             SetMana(0);
 
-            SetDamage(11, 17);
+            SetDamage(11, 15);
 
             SetDamageType(ResistanceType.Physical, 100);
 
@@ -35,12 +35,12 @@ namespace Server.Mobiles
             SetSkill(SkillName.Necromancy, 18.0);
             SetSkill(SkillName.SpiritSpeak, 18.0);
 
-            Fame = 2500;
-            Karma = -2500;
+            Fame = 1000;
+            Karma = -3500;
 
             Tamable = true;
             ControlSlots = 1;
-            MinTameSkill = 83.1;
+            MinTameSkill = 40.1;
         }
 
         public DireWolf(Serial serial)

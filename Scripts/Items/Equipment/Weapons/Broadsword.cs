@@ -10,7 +10,7 @@ namespace Server.Items
         public Broadsword()
             : base(0xF5E)
         {
-            Weight = 6.0;
+            Weight = 11.0;
         }
 
         public Broadsword(Serial serial)
@@ -20,9 +20,9 @@ namespace Server.Items
 
         public override WeaponAbility PrimaryAbility => WeaponAbility.CrushingBlow;
         public override WeaponAbility SecondaryAbility => WeaponAbility.ArmorIgnore;
-        public override int StrengthReq => 30;
-        public override int MinDamage => 13;
-        public override int MaxDamage => 17;
+        public override int StrengthReq => 40;
+        public override int MinDamage => 15;
+        public override int MaxDamage => 16;
         public override float Speed => 3.25f;
 
         public override int DefHitSound => 0x237;

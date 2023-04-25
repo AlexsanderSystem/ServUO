@@ -9,7 +9,7 @@ namespace Server.Items
         public Bow()
             : base(0x13B2)
         {
-            Weight = 6.0;
+            Weight = 10.0;
             Layer = Layer.TwoHanded;
         }
 
@@ -23,12 +23,13 @@ namespace Server.Items
         public override Item Ammo => new Arrow();
         public override WeaponAbility PrimaryAbility => WeaponAbility.ParalyzingBlow;
         public override WeaponAbility SecondaryAbility => WeaponAbility.MortalStrike;
-        public override int StrengthReq => 30;
-        public override int MinDamage => 17;
-        public override int MaxDamage => 21;
-        public override float Speed => 4.25f;
+        public override int StrengthReq => 45;
+        public override int MinDamage => 16;
+        public override int MaxDamage => 23;
+        public override float Speed => 2.25f;
 
-        public override int DefMaxRange => 10;
+        public override int DefMaxRange => 13;
+
         public override int InitMinHits => 31;
         public override int InitMaxHits => 60;
         public override WeaponAnimation DefAnimation => WeaponAnimation.ShootBow;

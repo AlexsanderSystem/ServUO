@@ -3,7 +3,6 @@ namespace Server.Items
     public class CrownOfArcaneTemperament : Circlet, ICanBeElfOrHuman
     {
         public override bool IsArtifact => true;
-        public bool ElfOnly { get { return false; } set { } }
 
         public override int LabelNumber => 1113762;  // Crown of Arcane Temperament
 

@@ -10,7 +10,7 @@ namespace Server.Items
         public PlateGloves()
             : base(0x1414)
         {
-            Weight = 2.0;
+            Weight = 18.0;
         }
 
         public PlateGloves(Serial serial)
@@ -18,14 +18,14 @@ namespace Server.Items
         {
         }
 
-        public override int BasePhysicalResistance => 5;
-        public override int BaseFireResistance => 3;
+        public override int BasePhysicalResistance => 14;
+        public override int BaseFireResistance => 2;
         public override int BaseColdResistance => 2;
-        public override int BasePoisonResistance => 3;
+        public override int BasePoisonResistance => 2;
         public override int BaseEnergyResistance => 2;
         public override int InitMinHits => 50;
         public override int InitMaxHits => 65;
-        public override int StrReq => 70;
+        public override int StrReq => 90;
         public override ArmorMaterialType MaterialType => ArmorMaterialType.Plate;
 
         public override void Serialize(GenericWriter writer)

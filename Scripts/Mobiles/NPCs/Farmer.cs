@@ -8,7 +8,7 @@ namespace Server.Mobiles
         private readonly List<SBInfo> m_SBInfos = new List<SBInfo>();
         [Constructable]
         public Farmer()
-            : base("the farmer")
+            : base("Cozinheiro")
         {
             SetSkill(SkillName.Lumberjacking, 36.0, 68.0);
             SetSkill(SkillName.TasteID, 36.0, 68.0);
@@ -38,6 +38,19 @@ namespace Server.Mobiles
 
             SetWearable(new WideBrimHat(), Utility.RandomNeutralHue(), 1);
         }
+
+                        public override bool HandlesOnSpeech(Mobile from)
+{
+    return true;
+}
+
+public override void OnSpeech(SpeechEventArgs e)
+{
+    if (e.Speech.ToLower() == "oi")
+    {
+        Say("Olá! Estou trabalhando agora. Se precisa vender algo avise.", e.Mobile);
+    }
+}
 
         public override void Serialize(GenericWriter writer)
         {

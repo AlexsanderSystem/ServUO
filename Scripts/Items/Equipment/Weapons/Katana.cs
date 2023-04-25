@@ -10,7 +10,7 @@ namespace Server.Items
         public Katana()
             : base(0x13FF)
         {
-            Weight = 6.0;
+            Weight = 4.0;
         }
 
         public Katana(Serial serial)
@@ -20,15 +20,15 @@ namespace Server.Items
 
         public override WeaponAbility PrimaryAbility => WeaponAbility.DoubleStrike;
         public override WeaponAbility SecondaryAbility => WeaponAbility.ArmorIgnore;
-        public override int StrengthReq => 25;
-        public override int MinDamage => 10;
-        public override int MaxDamage => 14;
-        public override float Speed => 2.50f;
+        public override int StrengthReq => 60;
+        public override int MinDamage => 17;
+        public override int MaxDamage => 21;
+        public override float Speed => 2.10f;
 
         public override int DefHitSound => 0x23B;
         public override int DefMissSound => 0x23A;
         public override int InitMinHits => 31;
-        public override int InitMaxHits => 90;
+        public override int InitMaxHits => 70;
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

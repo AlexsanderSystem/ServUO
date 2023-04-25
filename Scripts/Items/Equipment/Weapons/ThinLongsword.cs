@@ -7,7 +7,7 @@ namespace Server.Items
         public ThinLongsword()
             : base(0x13B8)
         {
-            Weight = 1.0;
+            Weight = 4.0;
         }
 
         public ThinLongsword(Serial serial)
@@ -15,10 +15,10 @@ namespace Server.Items
         {
         }
 
-        public override int StrengthReq => 35;
-        public override int MinDamage => 15;
-        public override int MaxDamage => 16;
-        public override float Speed => 3.50f;
+        public override int StrengthReq => 50;
+        public override int MinDamage => 16;
+        public override int MaxDamage => 21;
+        public override float Speed => 2.00f;
 
         public override int DefHitSound => 0x237;
         public override int DefMissSound => 0x23A;

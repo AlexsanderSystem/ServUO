@@ -10,7 +10,7 @@ namespace Server.Items
         public DoubleBladedStaff()
             : base(0x26BF)
         {
-            Weight = 2.0;
+            Weight = 8.0;
         }
 
         public DoubleBladedStaff(Serial serial)
@@ -20,9 +20,9 @@ namespace Server.Items
 
         public override WeaponAbility PrimaryAbility => WeaponAbility.DoubleStrike;
         public override WeaponAbility SecondaryAbility => WeaponAbility.InfectiousStrike;
-        public override int StrengthReq => 50;
-        public override int MinDamage => 11;
-        public override int MaxDamage => 14;
+        public override int StrengthReq => 70;
+        public override int MinDamage => 24;
+        public override int MaxDamage => 28;
         public override float Speed => 2.25f;
 
         public override int InitMinHits => 31;

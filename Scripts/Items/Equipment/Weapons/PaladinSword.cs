@@ -7,7 +7,7 @@ namespace Server.Items
         public PaladinSword()
             : base(0x26CE)
         {
-            Weight = 6.0;
+            Weight = 8.0;
         }
 
         public PaladinSword(Serial serial)
@@ -18,9 +18,9 @@ namespace Server.Items
         public override WeaponAbility PrimaryAbility => WeaponAbility.WhirlwindAttack;
         public override WeaponAbility SecondaryAbility => WeaponAbility.Disarm;
         public override int StrengthReq => 85;
-        public override int MinDamage => 20;
-        public override int MaxDamage => 24;
-        public override float Speed => 5.0f;
+        public override int MinDamage => 28;
+        public override int MaxDamage => 32;
+        public override float Speed => 3.50f;
         public override int InitMinHits => 36;
         public override int InitMaxHits => 48;
         public override void Serialize(GenericWriter writer)

@@ -8,7 +8,7 @@ namespace Server.Items
         public MaceBelt()
             : base(0xA40C)
         {
-            Weight = 3.0;
+            Weight = 6.0;
             Layer = Layer.Waist;
         }
 

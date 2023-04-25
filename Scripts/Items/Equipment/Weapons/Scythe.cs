@@ -11,7 +11,7 @@ namespace Server.Items
         public Scythe()
             : base(0x26BA)
         {
-            Weight = 5.0;
+            Weight = 8.0;
         }
 
         public Scythe(Serial serial)
@@ -21,13 +21,13 @@ namespace Server.Items
 
         public override WeaponAbility PrimaryAbility => WeaponAbility.BleedAttack;
         public override WeaponAbility SecondaryAbility => WeaponAbility.ParalyzingBlow;
-        public override int StrengthReq => 45;
-        public override int MinDamage => 16;
-        public override int MaxDamage => 19;
-        public override float Speed => 3.50f;
+        public override int StrengthReq => 70;
+        public override int MinDamage => 23;
+        public override int MaxDamage => 38;
+        public override float Speed => 2.50f;
 
         public override int InitMinHits => 31;
-        public override int InitMaxHits => 100;
+        public override int InitMaxHits => 70;
         public override HarvestSystem HarvestSystem => null;
         public override void Serialize(GenericWriter writer)
         {

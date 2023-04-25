@@ -9,7 +9,7 @@ namespace Server.Items
         public CompositeBow()
             : base(0x26C2)
         {
-            Weight = 5.0;
+            Weight = 10.0;
         }
 
         public CompositeBow(Serial serial)
@@ -22,10 +22,10 @@ namespace Server.Items
         public override Item Ammo => new Arrow();
         public override WeaponAbility PrimaryAbility => WeaponAbility.ArmorIgnore;
         public override WeaponAbility SecondaryAbility => WeaponAbility.MovingShot;
-        public override int StrengthReq => 45;
-        public override int MinDamage => 16;
-        public override int MaxDamage => 20;
-        public override float Speed => 4.00f;
+        public override int StrengthReq => 50;
+        public override int MinDamage => 20;
+        public override int MaxDamage => 25;
+        public override float Speed => 2.30f;
 
         public override int DefMaxRange => 10;
         public override int InitMinHits => 31;

@@ -6,7 +6,7 @@ namespace Server.Items
         public StuddedSuneate()
             : base(0x27D2)
         {
-            Weight = 5.0;
+            Weight = 15.0;
         }
 
         public StuddedSuneate(Serial serial)
@@ -14,14 +14,14 @@ namespace Server.Items
         {
         }
 
-        public override int BasePhysicalResistance => 2;
-        public override int BaseFireResistance => 4;
-        public override int BaseColdResistance => 3;
-        public override int BasePoisonResistance => 3;
+        public override int BasePhysicalResistance => 7;
+        public override int BaseFireResistance => 2;
+        public override int BaseColdResistance => 2;
+        public override int BasePoisonResistance => 2;
         public override int BaseEnergyResistance => 4;
         public override int InitMinHits => 35;
         public override int InitMaxHits => 50;
-        public override int StrReq => 30;
+        public override int StrReq => 60;
         public override ArmorMaterialType MaterialType => ArmorMaterialType.Studded;
         public override CraftResource DefaultResource => CraftResource.RegularLeather;
         public override void Serialize(GenericWriter writer)

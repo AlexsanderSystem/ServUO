@@ -21,9 +21,9 @@ namespace Server.Items
 
         public override WeaponAbility PrimaryAbility => WeaponAbility.ArmorIgnore;
         public override WeaponAbility SecondaryAbility => WeaponAbility.MortalStrike;
-        public override int StrengthReq => 45;
-        public override int MinDamage => 13;
-        public override int MaxDamage => 17;
+        public override int StrengthReq => 65;
+        public override int MinDamage => 33;
+        public override int MaxDamage => 42;
         public override float Speed => 3.25f;
         public override int InitMinHits => 31;
         public override int InitMaxHits => 70;

@@ -5,7 +5,7 @@ using System;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a sheep corpse")]
+    [CorpseName("corpo de ovelha")]
     public class Sheep : BaseCreature, ICarvable
     {
         private DateTime m_NextWoolTime;
@@ -13,7 +13,7 @@ namespace Server.Mobiles
         public Sheep()
             : base(AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4)
         {
-            Name = "a sheep";
+            Name = "Ovelha";
             Body = 0xCF;
             BaseSoundID = 0xD6;
 
@@ -93,7 +93,7 @@ namespace Server.Mobiles
                 }
             }
 
-            NextWoolTime = DateTime.UtcNow + TimeSpan.FromHours(2.0); // TODO: Proper time delay
+            NextWoolTime = DateTime.UtcNow + TimeSpan.FromHours(1.0); // TODO: Proper time delay
 
             return true;
         }

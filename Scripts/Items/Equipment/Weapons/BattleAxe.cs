@@ -10,7 +10,7 @@ namespace Server.Items
         public BattleAxe()
             : base(0xF47)
         {
-            Weight = 4.0;
+            Weight = 7.0;
             Layer = Layer.TwoHanded;
         }
 
@@ -21,9 +21,9 @@ namespace Server.Items
 
         public override WeaponAbility PrimaryAbility => WeaponAbility.BleedAttack;
         public override WeaponAbility SecondaryAbility => WeaponAbility.ConcussionBlow;
-        public override int StrengthReq => 35;
-        public override int MinDamage => 16;
-        public override int MaxDamage => 19;
+        public override int StrengthReq => 70;
+        public override int MinDamage => 34;
+        public override int MaxDamage => 38;
         public override float Speed => 3.50f;
 
         public override int InitMinHits => 31;

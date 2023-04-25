@@ -21,15 +21,15 @@ namespace Server.Items
 
         public override WeaponAbility PrimaryAbility => WeaponAbility.CrushingBlow;
         public override WeaponAbility SecondaryAbility => WeaponAbility.RidingSwipe;
-        public override int StrengthReq => 40;
+        public override int StrengthReq => 75;
         public override int MinDamage => 16;
         public override int MaxDamage => 19;
-        public override float Speed => 3.50f;
+        public override float Speed => 2.50f;
 
         public override int DefHitSound => 0x23B;
         public override int DefMissSound => 0x23A;
         public override int InitMinHits => 31;
-        public override int InitMaxHits => 90;
+        public override int InitMaxHits => 70;
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

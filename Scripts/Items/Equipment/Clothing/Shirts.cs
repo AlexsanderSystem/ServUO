@@ -107,6 +107,11 @@ namespace Server.Items
     [Flipable(0x2794, 0x27DF)]
     public class ClothNinjaJacket : BaseShirt
     {
+        public override int BaseFireResistance => 0;
+        public override int BaseColdResistance => 2;
+        public override int BasePoisonResistance => 2;
+        public override int BaseEnergyResistance => 2;
+        
         [Constructable]
         public ClothNinjaJacket()
             : this(0)
@@ -143,6 +148,11 @@ namespace Server.Items
 
     public class ElvenShirt : BaseShirt
     {
+        public override int BaseFireResistance => 0;
+        public override int BaseColdResistance => 2;
+        public override int BasePoisonResistance => 2;
+        public override int BaseEnergyResistance => 2;
+        
         [Constructable]
         public ElvenShirt()
             : this(0)
@@ -178,6 +188,11 @@ namespace Server.Items
 
     public class ElvenDarkShirt : BaseShirt
     {
+        public override int BaseFireResistance => 0;
+        public override int BaseColdResistance => 2;
+        public override int BasePoisonResistance => 2;
+        public override int BaseEnergyResistance => 2;
+        
         [Constructable]
         public ElvenDarkShirt()
             : this(0)

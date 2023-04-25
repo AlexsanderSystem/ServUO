@@ -38,6 +38,12 @@ namespace Server.Items
     [Flipable(0x1541, 0x1542)]
     public class BodySash : BaseMiddleTorso
     {
+        public override int BasePhysicalResistance => 0;
+        public override int BaseFireResistance => 1;
+        public override int BaseColdResistance => 1;
+        public override int BasePoisonResistance => 1;
+        public override int BaseEnergyResistance => 1;
+
         [Constructable]
         public BodySash()
             : this(0)
@@ -48,7 +54,8 @@ namespace Server.Items
         public BodySash(int hue)
             : base(0x1541, hue)
         {
-            Weight = 1.0;
+            
+            Weight = 4.0;
         }
 
         public BodySash(Serial serial)
@@ -75,6 +82,12 @@ namespace Server.Items
     [Alterable(typeof(DefTailoring), typeof(GargoyleHalfApron))]
     public class FullApron : BaseMiddleTorso
     {
+        public override int BasePhysicalResistance => 0;
+        public override int BaseFireResistance => 1;
+        public override int BaseColdResistance => 1;
+        public override int BasePoisonResistance => 1;
+        public override int BaseEnergyResistance => 1;
+
         [Constructable]
         public FullApron()
             : this(0)
@@ -85,7 +98,7 @@ namespace Server.Items
         public FullApron(int hue)
             : base(0x153d, hue)
         {
-            Weight = 4.0;
+            Weight = 7.0;
         }
 
         public FullApron(Serial serial)
@@ -110,7 +123,15 @@ namespace Server.Items
 
     [Flipable(0x1f7b, 0x1f7c)]
     public class Doublet : BaseMiddleTorso
+
+    
     {
+        public override int BasePhysicalResistance => 0;
+        public override int BaseFireResistance => 2;
+        public override int BaseColdResistance => 2;
+        public override int BasePoisonResistance => 2;
+        public override int BaseEnergyResistance => 2;
+
         [Constructable]
         public Doublet()
             : this(0)
@@ -121,7 +142,7 @@ namespace Server.Items
         public Doublet(int hue)
             : base(0x1F7B, hue)
         {
-            Weight = 2.0;
+            Weight = 4.0;
         }
 
         public Doublet(Serial serial)
@@ -147,6 +168,11 @@ namespace Server.Items
     [Flipable(0x1ffd, 0x1ffe)]
     public class Surcoat : BaseMiddleTorso
     {
+        public override int BasePhysicalResistance => 1;
+        public override int BaseFireResistance => 2;
+        public override int BaseColdResistance => 2;
+        public override int BasePoisonResistance => 2;
+        public override int BaseEnergyResistance => 2;
         [Constructable]
         public Surcoat()
             : this(0)
@@ -157,7 +183,7 @@ namespace Server.Items
         public Surcoat(int hue)
             : base(0x1FFD, hue)
         {
-            Weight = 6.0;
+            Weight = 8.0;
         }
 
         public Surcoat(Serial serial)
@@ -183,6 +209,12 @@ namespace Server.Items
     [Flipable(0x1fa1, 0x1fa2)]
     public class Tunic : BaseMiddleTorso
     {
+        public override int BasePhysicalResistance => 2;
+        public override int BaseFireResistance => 2;
+        public override int BaseColdResistance => 2;
+        public override int BasePoisonResistance => 2;
+        public override int BaseEnergyResistance => 2;
+
         [Constructable]
         public Tunic()
             : this(0)
@@ -193,7 +225,7 @@ namespace Server.Items
         public Tunic(int hue)
             : base(0x1FA1, hue)
         {
-            Weight = 5.0;
+            Weight = 10.0;
         }
 
         public Tunic(Serial serial)
@@ -217,7 +249,7 @@ namespace Server.Items
     }
 
     [Flipable(0x2310, 0x230F)]
-    public class FormalShirt : BaseMiddleTorso
+    public class FormalShirt : BaseMiddleTorso //REVISAR
     {
         [Constructable]
         public FormalShirt()
@@ -229,7 +261,7 @@ namespace Server.Items
         public FormalShirt(int hue)
             : base(0x2310, hue)
         {
-            Weight = 1.0;
+            Weight = 4.0;
         }
 
         public FormalShirt(Serial serial)
@@ -255,6 +287,12 @@ namespace Server.Items
     [Flipable(0x1f9f, 0x1fa0)]
     public class JesterSuit : BaseMiddleTorso
     {
+        public override int BasePhysicalResistance => 3;
+        public override int BaseFireResistance => 1;
+        public override int BaseColdResistance => 1;
+        public override int BasePoisonResistance => 1;
+        public override int BaseEnergyResistance => 1;
+
         [Constructable]
         public JesterSuit()
             : this(0)
@@ -265,7 +303,7 @@ namespace Server.Items
         public JesterSuit(int hue)
             : base(0x1F9F, hue)
         {
-            Weight = 4.0;
+            Weight = 8.0;
         }
 
         public JesterSuit(Serial serial)
@@ -291,6 +329,12 @@ namespace Server.Items
     [Flipable(0x27A1, 0x27EC)]
     public class JinBaori : BaseMiddleTorso
     {
+        public override int BasePhysicalResistance => 0;
+        public override int BaseFireResistance => 2;
+        public override int BaseColdResistance => 2;
+        public override int BasePoisonResistance => 2;
+        public override int BaseEnergyResistance => 2;
+
         [Constructable]
         public JinBaori()
             : this(0)
@@ -301,7 +345,7 @@ namespace Server.Items
         public JinBaori(int hue)
             : base(0x27A1, hue)
         {
-            Weight = 3.0;
+            Weight = 5.0;
         }
 
         public JinBaori(Serial serial)

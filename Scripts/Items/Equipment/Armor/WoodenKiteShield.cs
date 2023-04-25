@@ -6,7 +6,7 @@ namespace Server.Items
         public WoodenKiteShield()
             : base(0x1B78)
         {
-            Weight = 5.0;
+            Weight = 25.0;
         }
 
         public WoodenKiteShield(Serial serial)
@@ -14,14 +14,14 @@ namespace Server.Items
         {
         }
 
-        public override int BasePhysicalResistance => 0;
+        public override int BasePhysicalResistance => 8;
         public override int BaseFireResistance => 0;
         public override int BaseColdResistance => 0;
         public override int BasePoisonResistance => 0;
         public override int BaseEnergyResistance => 1;
         public override int InitMinHits => 50;
         public override int InitMaxHits => 65;
-        public override int StrReq => 20;
+        public override int StrReq => 60;
 
         public override void Serialize(GenericWriter writer)
         {

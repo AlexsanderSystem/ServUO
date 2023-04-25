@@ -11,7 +11,7 @@ namespace Server.Engines.Quests
             Spawn();
         }
 
-        public static Point3D HomeLocation => new Point3D(1150, 964, -42);
+        public static Point3D HomeLocation => new Point3D(2992, 982, 0);
         public static int HomeRange => 5;
 
         public override Type[] Quests => new Type[] { typeof(EscortToDugan) };
@@ -113,7 +113,7 @@ namespace Server.Engines.Quests
                 RangeHome = HomeRange
             };
 
-            creature.MoveToWorld(HomeLocation, Map.TerMur);
+            creature.MoveToWorld(HomeLocation, Map.Trammel);
         }
 
         public override void InitBody()

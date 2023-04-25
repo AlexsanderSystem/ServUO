@@ -7,7 +7,7 @@ namespace Server.Items
         public Tetsubo()
             : base(0x27A6)
         {
-            Weight = 8.0;
+            Weight = 15.0;
             Layer = Layer.TwoHanded;
         }
 
@@ -18,9 +18,9 @@ namespace Server.Items
 
         public override WeaponAbility PrimaryAbility => WeaponAbility.FrenziedWhirlwind;
         public override WeaponAbility SecondaryAbility => WeaponAbility.CrushingBlow;
-        public override int StrengthReq => 35;
-        public override int MinDamage => 12;
-        public override int MaxDamage => 15;
+        public override int StrengthReq => 80;
+        public override int MinDamage => 24;
+        public override int MaxDamage => 40;
         public override float Speed => 2.50f;
 
         public override int DefHitSound => 0x233;

@@ -10,7 +10,7 @@ namespace Server.Items
         public WarMace()
             : base(0x1407)
         {
-            Weight = 17.0;
+            Weight = 10.0;
         }
 
         public WarMace(Serial serial)
@@ -20,10 +20,10 @@ namespace Server.Items
 
         public override WeaponAbility PrimaryAbility => WeaponAbility.CrushingBlow;
         public override WeaponAbility SecondaryAbility => WeaponAbility.MortalStrike;
-        public override int StrengthReq => 80;
-        public override int MinDamage => 16;
-        public override int MaxDamage => 20;
-        public override float Speed => 4.00f;
+        public override int StrengthReq => 65;
+        public override int MinDamage => 25;
+        public override int MaxDamage => 39;
+        public override float Speed => 2.90f;
 
         public override int InitMinHits => 31;
         public override int InitMaxHits => 110;

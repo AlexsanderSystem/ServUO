@@ -6,6 +6,11 @@ namespace Server.Items
     [Flipable(0x2FC9, 0x317F)]
     public class LeafLegs : BaseArmor
     {
+        private bool _ElvesOnly;
+
+        [CommandProperty(AccessLevel.GameMaster)]
+        public bool ElfOnly { get { return _ElvesOnly; } set { _ElvesOnly = value; } }
+        
         [Constructable]
         public LeafLegs()
             : base(0x2FC9)

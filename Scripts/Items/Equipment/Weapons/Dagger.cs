@@ -10,7 +10,7 @@ namespace Server.Items
         public Dagger()
             : base(0xF52)
         {
-            Weight = 1.0;
+            Weight = 4.0;
         }
 
         public Dagger(Serial serial)
@@ -21,9 +21,9 @@ namespace Server.Items
         public override WeaponAbility PrimaryAbility => WeaponAbility.ShadowStrike;
         public override WeaponAbility SecondaryAbility => WeaponAbility.InfectiousStrike;
         public override int StrengthReq => 10;
-        public override int MinDamage => 10;
-        public override int MaxDamage => 12;
-        public override float Speed => 2.00f;
+        public override int MinDamage => 5;
+        public override int MaxDamage => 14;
+        public override float Speed => 1.00f;
         public override int InitMinHits => 31;
         public override int InitMaxHits => 40;
         public override SkillName DefSkill => SkillName.Fencing;

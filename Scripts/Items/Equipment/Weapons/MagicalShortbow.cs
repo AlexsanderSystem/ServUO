@@ -22,10 +22,10 @@ namespace Server.Items
         public override Item Ammo => new Arrow();
         public override WeaponAbility PrimaryAbility => WeaponAbility.LightningArrow;
         public override WeaponAbility SecondaryAbility => WeaponAbility.PsychicAttack;
-        public override int StrengthReq => 45;
+        public override int StrengthReq => 60;
         public override int MinDamage => 12;
         public override int MaxDamage => 16;
-        public override float Speed => 3.00f;
+        public override float Speed => 2.60f;
 
         public override int DefMaxRange => 10;
         public override int InitMinHits => 41;

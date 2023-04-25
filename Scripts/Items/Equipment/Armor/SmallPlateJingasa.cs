@@ -6,7 +6,7 @@ namespace Server.Items
         public SmallPlateJingasa()
             : base(0x2784)
         {
-            Weight = 5.0;
+            Weight = 15.0;
         }
 
         public SmallPlateJingasa(Serial serial)
@@ -14,14 +14,14 @@ namespace Server.Items
         {
         }
 
-        public override int BasePhysicalResistance => 7;
-        public override int BaseFireResistance => 2;
-        public override int BaseColdResistance => 2;
-        public override int BasePoisonResistance => 2;
-        public override int BaseEnergyResistance => 2;
+        public override int BasePhysicalResistance => 10;
+        public override int BaseFireResistance => 1;
+        public override int BaseColdResistance => 1;
+        public override int BasePoisonResistance => 1;
+        public override int BaseEnergyResistance => 1;
         public override int InitMinHits => 55;
         public override int InitMaxHits => 60;
-        public override int StrReq => 55;
+        public override int StrReq => 60;
         public override ArmorMaterialType MaterialType => ArmorMaterialType.Plate;
         public override void Serialize(GenericWriter writer)
         {

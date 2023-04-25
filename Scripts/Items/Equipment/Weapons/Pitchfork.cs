@@ -20,7 +20,7 @@ namespace Server.Items
         public override int StrengthReq => 55;
         public override int MinDamage => 12;
         public override int MaxDamage => 15;
-        public override float Speed => 2.50f;
+        public override float Speed => 1.50f;
 
         public override int InitMinHits => 31;
         public override int InitMaxHits => 60;

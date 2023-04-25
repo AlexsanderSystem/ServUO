@@ -186,8 +186,8 @@ namespace Server.Mobiles
             pay += (int)Skills[SkillName.Fencing].Value + (int)Skills[SkillName.Archery].Value;
             pay += (int)Skills[SkillName.MagicResist].Value + (int)Skills[SkillName.Healing].Value;
             pay += (int)Skills[SkillName.Magery].Value + (int)Skills[SkillName.Parry].Value;
-            pay /= 35;
-            pay += 1;
+            pay /= 100;
+            pay += 50;
 
             return pay;
         }

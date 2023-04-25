@@ -9,7 +9,7 @@ namespace Server.Items
             : base(0xA25)
         {
             if (Burnout)
-                Duration = TimeSpan.FromMinutes(20);
+                Duration = TimeSpan.FromMinutes(24);
             else
                 Duration = TimeSpan.Zero;
 

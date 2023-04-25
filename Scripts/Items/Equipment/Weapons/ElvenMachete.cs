@@ -17,10 +17,10 @@ namespace Server.Items
 
         public override WeaponAbility PrimaryAbility => WeaponAbility.DefenseMastery;
         public override WeaponAbility SecondaryAbility => WeaponAbility.Bladeweave;
-        public override int StrengthReq => 20;
-        public override int MinDamage => 11;
-        public override int MaxDamage => 15;
-        public override float Speed => 2.75f;
+        public override int StrengthReq => 40;
+        public override int MinDamage => 9;
+        public override int MaxDamage => 14;
+        public override float Speed => 1.55f;
 
         public override int DefHitSound => 0x23B;
         public override int DefMissSound => 0x239;

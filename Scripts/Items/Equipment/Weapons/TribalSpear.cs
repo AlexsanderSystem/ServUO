@@ -12,7 +12,7 @@ namespace Server.Items
             Weight = 7.0;
             Hue = 837;
             Attributes.WeaponDamage = 20;
-            WeaponAttributes.DurabilityBonus = 20;
+            WeaponAttributes.DurabilityBonus = 10;
         }
 
         public TribalSpear(Serial serial)
@@ -24,8 +24,8 @@ namespace Server.Items
         public override WeaponAbility SecondaryAbility => WeaponAbility.ParalyzingBlow;
         public override int StrengthReq => 50;
         public override int MinDamage => 13;
-        public override int MaxDamage => 15;
-        public override float Speed => 2.75f;
+        public override int MaxDamage => 19;
+        public override float Speed => 1.35f;
 
         public override int InitMinHits => 31;
         public override int InitMaxHits => 80;

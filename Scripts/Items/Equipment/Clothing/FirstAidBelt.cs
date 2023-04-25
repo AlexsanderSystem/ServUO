@@ -49,7 +49,7 @@ namespace Server.Items
         public FirstAidBelt()
             : base(0xA1F6)
         {
-            Weight = 2.0;
+            Weight = 12.0;
             Layer = Layer.Waist;
             m_Attributes = new AosAttributes(this);
         }

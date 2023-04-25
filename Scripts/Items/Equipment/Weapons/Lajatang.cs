@@ -22,14 +22,14 @@ namespace Server.Items
         public override WeaponAbility PrimaryAbility => WeaponAbility.DefenseMastery;
         public override WeaponAbility SecondaryAbility => WeaponAbility.FrenziedWhirlwind;
         public override int StrengthReq => 65;
-        public override int MinDamage => 16;
-        public override int MaxDamage => 19;
-        public override float Speed => 3.50f;
+        public override int MinDamage => 34;
+        public override int MaxDamage => 38;
+        public override float Speed => 3.00f;
 
         public override int DefHitSound => 0x232;
         public override int DefMissSound => 0x238;
-        public override int InitMinHits => 90;
-        public override int InitMaxHits => 95;
+        public override int InitMinHits => 30;
+        public override int InitMaxHits => 71;
         public override SkillName DefSkill => SkillName.Fencing;
         public override WeaponType DefType => WeaponType.Piercing;
         public override WeaponAnimation DefAnimation => WeaponAnimation.Pierce1H;

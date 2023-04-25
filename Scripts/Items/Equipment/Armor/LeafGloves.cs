@@ -19,6 +19,11 @@ namespace Server.Items
 
         public override ArmorMeditationAllowance DefMedAllowance => ArmorMeditationAllowance.All;
 
+        private bool _ElvesOnly;
+        
+        [CommandProperty(AccessLevel.GameMaster)]
+        public bool ElfOnly { get { return _ElvesOnly; } set { _ElvesOnly = value; } }
+        
         [Constructable]
         public LeafGloves()
             : base(0x2FC6)

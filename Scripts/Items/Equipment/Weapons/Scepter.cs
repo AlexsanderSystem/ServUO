@@ -21,8 +21,8 @@ namespace Server.Items
         public override WeaponAbility PrimaryAbility => WeaponAbility.CrushingBlow;
         public override WeaponAbility SecondaryAbility => WeaponAbility.MortalStrike;
         public override int StrengthReq => 40;
-        public override int MinDamage => 14;
-        public override int MaxDamage => 18;
+        public override int MinDamage => 19;
+        public override int MaxDamage => 26;
         public override float Speed => 3.50f;
 
         public override int InitMinHits => 31;

@@ -23,13 +23,13 @@ namespace Server.Items
         public override WeaponAbility PrimaryAbility => WeaponAbility.ForceArrow;
         public override WeaponAbility SecondaryAbility => WeaponAbility.SerpentArrow;
         public override int StrengthReq => 45;
-        public override int MinDamage => 15;
-        public override int MaxDamage => 19;
-        public override float Speed => 3.75f;
+        public override int MinDamage => 17;
+        public override int MaxDamage => 20;
+        public override float Speed => 1.85f;
 
-        public override int DefMaxRange => 10;
+        public override int DefMaxRange => 14;
         public override int InitMinHits => 41;
-        public override int InitMaxHits => 90;
+        public override int InitMaxHits => 70;
         public override WeaponAnimation DefAnimation => WeaponAnimation.ShootBow;
         public override void Serialize(GenericWriter writer)
         {

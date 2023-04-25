@@ -3,11 +3,16 @@ namespace Server.Items
     [Flipable(0x2B6A, 0x3161)]
     public class WoodlandGloves : BaseArmor
     {
+        private bool _ElvesOnly;
+
+        [CommandProperty(AccessLevel.GameMaster)]
+        public bool ElfOnly { get { return _ElvesOnly; } set { _ElvesOnly = value; } }
+        
         [Constructable]
         public WoodlandGloves()
             : base(0x2B6A)
         {
-            Weight = 2.0;
+            Weight = 12.0;
         }
 
         public WoodlandGloves(Serial serial)
@@ -15,11 +20,11 @@ namespace Server.Items
         {
         }
 
-        public override int BasePhysicalResistance => 5;
-        public override int BaseFireResistance => 3;
-        public override int BaseColdResistance => 2;
-        public override int BasePoisonResistance => 3;
-        public override int BaseEnergyResistance => 2;
+        public override int BasePhysicalResistance => 8;
+        public override int BaseFireResistance => 4;
+        public override int BaseColdResistance => 4;
+        public override int BasePoisonResistance => 4;
+        public override int BaseEnergyResistance => 5;
         public override int InitMinHits => 50;
         public override int InitMaxHits => 65;
         public override int StrReq => 70;

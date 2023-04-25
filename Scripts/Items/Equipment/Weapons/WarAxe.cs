@@ -21,10 +21,10 @@ namespace Server.Items
 
         public override WeaponAbility PrimaryAbility => WeaponAbility.ArmorIgnore;
         public override WeaponAbility SecondaryAbility => WeaponAbility.BleedAttack;
-        public override int StrengthReq => 35;
-        public override int MinDamage => 12;
-        public override int MaxDamage => 16;
-        public override float Speed => 3.00f;
+        public override int StrengthReq => 80;
+        public override int MinDamage => 19;
+        public override int MaxDamage => 21;
+        public override float Speed => 2.20f;
 
         public override int DefHitSound => 0x233;
         public override int DefMissSound => 0x239;

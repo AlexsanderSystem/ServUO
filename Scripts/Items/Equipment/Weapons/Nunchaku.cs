@@ -17,10 +17,10 @@ namespace Server.Items
 
         public override WeaponAbility PrimaryAbility => WeaponAbility.Block;
         public override WeaponAbility SecondaryAbility => WeaponAbility.DoubleStrike;
-        public override int StrengthReq => 15;
-        public override int MinDamage => 12;
-        public override int MaxDamage => 15;
-        public override float Speed => 2.50f;
+        public override int StrengthReq => 30;
+        public override int MinDamage => 13;
+        public override int MaxDamage => 19;
+        public override float Speed => 1.50f;
 
         public override int DefHitSound => 0x535;
         public override int DefMissSound => 0x239;

@@ -10,7 +10,7 @@ namespace Server.Items
         public BoneHarvester()
             : base(0x26BB)
         {
-            Weight = 3.0;
+            Weight = 5.0;
         }
 
         public BoneHarvester(Serial serial)
@@ -20,10 +20,10 @@ namespace Server.Items
 
         public override WeaponAbility PrimaryAbility => WeaponAbility.ParalyzingBlow;
         public override WeaponAbility SecondaryAbility => WeaponAbility.MortalStrike;
-        public override int StrengthReq => 25;
-        public override int MinDamage => 12;
-        public override int MaxDamage => 16;
-        public override float Speed => 3.00f;
+        public override int StrengthReq => 50;
+        public override int MinDamage => 10;
+        public override int MaxDamage => 17;
+        public override float Speed => 1.50f;
 
         public override int DefHitSound => 0x23B;
         public override int DefMissSound => 0x23A;

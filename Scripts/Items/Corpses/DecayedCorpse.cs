@@ -4,7 +4,7 @@ namespace Server.Items
 {
     public class DecayedCorpse : Container
     {
-        private static readonly TimeSpan m_DefaultDecayTime = TimeSpan.FromMinutes(7.0);
+        private static readonly TimeSpan m_DefaultDecayTime = TimeSpan.FromMinutes(25.0);
         private Timer m_DecayTimer;
         private DateTime m_DecayTime;
         public DecayedCorpse(string name)

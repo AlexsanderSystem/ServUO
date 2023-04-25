@@ -21,10 +21,10 @@ namespace Server.Items
 
         public override WeaponAbility PrimaryAbility => WeaponAbility.PsychicAttack;
         public override WeaponAbility SecondaryAbility => WeaponAbility.BleedAttack;
-        public override int StrengthReq => 35;
-        public override int MinDamage => 12;
-        public override int MaxDamage => 15;
-        public override float Speed => 2.50f;
+        public override int StrengthReq => 40;
+        public override int MinDamage => 13;
+        public override int MaxDamage => 17;
+        public override float Speed => 1.50f;
 
         public override int DefMissSound => 0x239;
         public override int InitMinHits => 30;

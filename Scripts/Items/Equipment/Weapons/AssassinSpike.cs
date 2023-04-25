@@ -23,17 +23,17 @@ namespace Server.Items
 
         public override int StrengthReq => 15;
 
-        public override int MinDamage => 10;
-        public override int MaxDamage => 12;
+        public override int MinDamage => 7;
+        public override int MaxDamage => 16;
 
-        public override float Speed => 2.00f;
+        public override float Speed => 1.25f;
 
         public override int DefMissSound => 0x239;
 
         public override SkillName DefSkill => SkillName.Fencing;
 
-        public override int InitMinHits => 30;
-        public override int InitMaxHits => 60;
+        public override int InitMinHits => 31;
+        public override int InitMaxHits => 70;
 
         public override void Serialize(GenericWriter writer)
         {

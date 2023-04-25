@@ -16,10 +16,10 @@ namespace Server.Items
         }
 
         public override int BasePhysicalResistance => 1;
-        public override int BaseFireResistance => 5;
-        public override int BaseColdResistance => 2;
-        public override int BasePoisonResistance => 2;
-        public override int BaseEnergyResistance => 5;
+        public override int BaseFireResistance => 3;
+        public override int BaseColdResistance => 3;
+        public override int BasePoisonResistance => 3;
+        public override int BaseEnergyResistance => 3;
         public override int InitMinHits => 20;
         public override int InitMaxHits => 35;
         public override int StrReq => 10;

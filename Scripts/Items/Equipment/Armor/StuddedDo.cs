@@ -6,7 +6,7 @@ namespace Server.Items
         public StuddedDo()
             : base(0x27C7)
         {
-            Weight = 8.0;
+            Weight = 18.0;
         }
 
         public StuddedDo(Serial serial)
@@ -14,14 +14,14 @@ namespace Server.Items
         {
         }
 
-        public override int BasePhysicalResistance => 2;
-        public override int BaseFireResistance => 4;
-        public override int BaseColdResistance => 3;
-        public override int BasePoisonResistance => 3;
+        public override int BasePhysicalResistance => 7;
+        public override int BaseFireResistance => 2;
+        public override int BaseColdResistance => 2;
+        public override int BasePoisonResistance => 2;
         public override int BaseEnergyResistance => 4;
         public override int InitMinHits => 40;
         public override int InitMaxHits => 50;
-        public override int StrReq => 55;
+        public override int StrReq => 65;
         public override ArmorMaterialType MaterialType => ArmorMaterialType.Studded;
         public override CraftResource DefaultResource => CraftResource.RegularLeather;
         public override void Serialize(GenericWriter writer)

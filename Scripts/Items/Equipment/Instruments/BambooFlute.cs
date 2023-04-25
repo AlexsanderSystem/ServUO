@@ -6,7 +6,7 @@ namespace Server.Items
         public BambooFlute()
             : base(0x2805, 0x504, 0x503)
         {
-            Weight = 2.0;
+            Weight = 4.0;
         }
 
         public BambooFlute(Serial serial)

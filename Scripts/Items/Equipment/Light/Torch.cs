@@ -15,13 +15,13 @@ namespace Server.Items
             : base(0xF6B)
         {
             if (Burnout)
-                Duration = TimeSpan.FromMinutes(30);
+                Duration = TimeSpan.FromMinutes(17);
             else
                 Duration = TimeSpan.Zero;
 
-            Burning = false;
+            Burning = true;
             Light = LightType.Circle300;
-            Weight = 1.0;
+            Weight = 4.0;
         }
 
         public Torch(Serial serial)

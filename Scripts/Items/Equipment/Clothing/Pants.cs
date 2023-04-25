@@ -249,6 +249,11 @@ namespace Server.Items
     [Flipable(0x2FC3, 0x3179)]
     public class ElvenPants : BasePants
     {
+        public override int BaseFireResistance => 2;
+        public override int BaseColdResistance => 2;
+        public override int BasePoisonResistance => 2;
+        public override int BaseEnergyResistance => 2; 
+        
         [Constructable]
         public ElvenPants()
             : this(0)

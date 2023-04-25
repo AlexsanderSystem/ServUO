@@ -7,7 +7,7 @@ namespace Server.Items
         public RingmailArms()
             : base(0x13EE)
         {
-            Weight = 15.0;
+            Weight = 10.0;
         }
 
         public RingmailArms(Serial serial)
@@ -15,14 +15,14 @@ namespace Server.Items
         {
         }
 
-        public override int BasePhysicalResistance => 3;
-        public override int BaseFireResistance => 3;
+        public override int BasePhysicalResistance => 7;
+        public override int BaseFireResistance => 1;
         public override int BaseColdResistance => 1;
-        public override int BasePoisonResistance => 5;
-        public override int BaseEnergyResistance => 3;
+        public override int BasePoisonResistance => 1;
+        public override int BaseEnergyResistance => 1;
         public override int InitMinHits => 40;
         public override int InitMaxHits => 50;
-        public override int StrReq => 40;
+        public override int StrReq => 50;
         public override ArmorMaterialType MaterialType => ArmorMaterialType.Ringmail;
         public override void Serialize(GenericWriter writer)
         {

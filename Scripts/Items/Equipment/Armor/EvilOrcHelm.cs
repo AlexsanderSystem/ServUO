@@ -19,7 +19,7 @@ namespace Server.Items
         {
         }
 
-        public override int LabelNumber => 1062021;// an evil orc helm
+        public override int LabelNumber => 1062021;// an evil orc helm //Continuar daqui
         public override bool UseIntOrDexProperty
         {
             get

@@ -108,6 +108,11 @@ namespace Server.Items
     [Flipable(0x2307, 0x2308)]
     public class FurBoots : BaseShoes
     {
+        public override int BaseFireResistance => 4;
+        public override int BaseColdResistance => 2;
+        public override int BasePoisonResistance => 2;
+        public override int BaseEnergyResistance => 0;
+        
         [Constructable]
         public FurBoots()
             : this(0)
@@ -118,7 +123,7 @@ namespace Server.Items
         public FurBoots(int hue)
             : base(0x2307, hue)
         {
-            Weight = 3.0;
+            Weight = 5.0;
         }
 
         public FurBoots(Serial serial)

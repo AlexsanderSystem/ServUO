@@ -2,6 +2,9 @@ namespace Server.Items
 {
     public class HeavyOrnateAxe : OrnateAxe
     {
+        public override int StrengthReq => 85;
+        public override int MinDamage => 32;
+        public override int MaxDamage => 40;
         public override int LabelNumber => 1073548; // heavy ornate axe
 
         [Constructable]

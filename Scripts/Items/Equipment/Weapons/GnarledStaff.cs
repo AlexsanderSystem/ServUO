@@ -10,7 +10,7 @@ namespace Server.Items
         public GnarledStaff()
             : base(0x13F8)
         {
-            Weight = 3.0;
+            Weight = 6.0;
         }
 
         public GnarledStaff(Serial serial)
@@ -21,8 +21,8 @@ namespace Server.Items
         public override WeaponAbility PrimaryAbility => WeaponAbility.ConcussionBlow;
         public override WeaponAbility SecondaryAbility => WeaponAbility.ForceOfNature;
         public override int StrengthReq => 20;
-        public override int MinDamage => 15;
-        public override int MaxDamage => 18;
+        public override int MinDamage => 17;
+        public override int MaxDamage => 22;
         public override float Speed => 3.25f;
 
         public override int InitMinHits => 31;

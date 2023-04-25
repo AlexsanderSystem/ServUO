@@ -18,8 +18,8 @@ namespace Server.Items
         public override WeaponAbility PrimaryAbility => WeaponAbility.ShadowStrike;
         public override WeaponAbility SecondaryAbility => WeaponAbility.BleedAttack;
         public override int StrengthReq => 5;
-        public override int MinDamage => 10;
-        public override int MaxDamage => 13;
+        public override int MinDamage => 1;
+        public override int MaxDamage => 10;
         public override float Speed => 2.25f;
 
         public override int InitMinHits => 31;
