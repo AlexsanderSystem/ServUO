@@ -35,6 +35,7 @@ namespace ArcticHarpie
             Fame = 3500;
             Karma = -3500;
 
+            VirtualArmor = 24;
 
 
         }
